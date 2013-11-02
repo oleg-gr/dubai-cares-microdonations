@@ -7,156 +7,183 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AC246B81823F4B70062D4ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC246B71823F4B70062D4ED /* Foundation.framework */; };
-		7AC246BA1823F4B70062D4ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC246B91823F4B70062D4ED /* CoreGraphics.framework */; };
-		7AC246BC1823F4B70062D4ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC246BB1823F4B70062D4ED /* UIKit.framework */; };
-		7AC246C21823F4B70062D4ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AC246C01823F4B70062D4ED /* InfoPlist.strings */; };
-		7AC246C41823F4B70062D4ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC246C31823F4B70062D4ED /* main.m */; };
-		7AC246C81823F4B70062D4ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC246C71823F4B70062D4ED /* AppDelegate.m */; };
-		7AC246CA1823F4B70062D4ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC246C91823F4B70062D4ED /* Images.xcassets */; };
-		7AC246D11823F4B70062D4ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC246D01823F4B70062D4ED /* XCTest.framework */; };
-		7AC246D21823F4B70062D4ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC246B71823F4B70062D4ED /* Foundation.framework */; };
-		7AC246D31823F4B70062D4ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC246BB1823F4B70062D4ED /* UIKit.framework */; };
-		7AC246DB1823F4B70062D4ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AC246D91823F4B70062D4ED /* InfoPlist.strings */; };
-		7AC246DD1823F4B70062D4ED /* Dubai_Cares_MicrodonationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC246DC1823F4B70062D4ED /* Dubai_Cares_MicrodonationsTests.m */; };
-		7AC246E71823F5250062D4ED /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC246E61823F5250062D4ED /* Storyboard.storyboard */; };
+		7AADF85918245C3E00227346 /* back3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AADF85518245C3D00227346 /* back3.jpg */; };
+		7AADF85A18245C3E00227346 /* back4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AADF85618245C3E00227346 /* back4.jpg */; };
+		7AADF85B18245C3E00227346 /* back5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AADF85718245C3E00227346 /* back5.jpg */; };
+		7AADF85C18245C3E00227346 /* back6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AADF85818245C3E00227346 /* back6.jpg */; };
+		7AADF8A51824788100227346 /* DCWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AADF8A41824788100227346 /* DCWorkViewController.m */; };
+		7AC84EE6182444DD00FE6ED2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC84EE5182444DD00FE6ED2 /* Foundation.framework */; };
+		7AC84EE8182444DD00FE6ED2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC84EE7182444DD00FE6ED2 /* CoreGraphics.framework */; };
+		7AC84EEA182444DD00FE6ED2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC84EE9182444DD00FE6ED2 /* UIKit.framework */; };
+		7AC84EF2182444DD00FE6ED2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC84EF1182444DD00FE6ED2 /* main.m */; };
+		7AC84EF6182444DD00FE6ED2 /* DCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC84EF5182444DD00FE6ED2 /* DCAppDelegate.m */; };
+		7AC84EF9182444DD00FE6ED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC84EF7182444DD00FE6ED2 /* Main.storyboard */; };
+		7AC84EFC182444DD00FE6ED2 /* DCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC84EFB182444DD00FE6ED2 /* DCViewController.m */; };
+		7AC84EFE182444DD00FE6ED2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC84EFD182444DD00FE6ED2 /* Images.xcassets */; };
+		7AC84F05182444DD00FE6ED2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC84F04182444DD00FE6ED2 /* XCTest.framework */; };
+		7AC84F06182444DD00FE6ED2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC84EE5182444DD00FE6ED2 /* Foundation.framework */; };
+		7AC84F07182444DD00FE6ED2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC84EE9182444DD00FE6ED2 /* UIKit.framework */; };
+		7AC84F11182444DD00FE6ED2 /* Dubai_Cares_MicrodonationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC84F10182444DD00FE6ED2 /* Dubai_Cares_MicrodonationsTests.m */; };
+		7AC84F1B1824470500FE6ED2 /* dc-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AC84F1A1824470500FE6ED2 /* dc-logo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7AC246D41823F4B70062D4ED /* PBXContainerItemProxy */ = {
+		7AC84F08182444DD00FE6ED2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7AC246AC1823F4B70062D4ED /* Project object */;
+			containerPortal = 7AC84EDA182444DD00FE6ED2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7AC246B31823F4B70062D4ED;
+			remoteGlobalIDString = 7AC84EE1182444DD00FE6ED2;
 			remoteInfo = "Dubai Cares Microdonations";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7AC246B41823F4B70062D4ED /* Dubai Cares Microdonations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dubai Cares Microdonations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AC246B71823F4B70062D4ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7AC246B91823F4B70062D4ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7AC246BB1823F4B70062D4ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		7AC246BF1823F4B70062D4ED /* Dubai Cares Microdonations-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dubai Cares Microdonations-Info.plist"; sourceTree = "<group>"; };
-		7AC246C11823F4B70062D4ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7AC246C31823F4B70062D4ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7AC246C51823F4B70062D4ED /* Dubai Cares Microdonations-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dubai Cares Microdonations-Prefix.pch"; sourceTree = "<group>"; };
-		7AC246C61823F4B70062D4ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7AC246C71823F4B70062D4ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7AC246C91823F4B70062D4ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7AC246CF1823F4B70062D4ED /* Dubai Cares MicrodonationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dubai Cares MicrodonationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AC246D01823F4B70062D4ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7AC246D81823F4B70062D4ED /* Dubai Cares MicrodonationsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dubai Cares MicrodonationsTests-Info.plist"; sourceTree = "<group>"; };
-		7AC246DA1823F4B70062D4ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7AC246DC1823F4B70062D4ED /* Dubai_Cares_MicrodonationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dubai_Cares_MicrodonationsTests.m; sourceTree = "<group>"; };
-		7AC246E61823F5250062D4ED /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
+		7AADF85518245C3D00227346 /* back3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back3.jpg; sourceTree = "<group>"; };
+		7AADF85618245C3E00227346 /* back4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back4.jpg; sourceTree = "<group>"; };
+		7AADF85718245C3E00227346 /* back5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back5.jpg; sourceTree = "<group>"; };
+		7AADF85818245C3E00227346 /* back6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back6.jpg; sourceTree = "<group>"; };
+		7AADF8A31824788100227346 /* DCWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCWorkViewController.h; sourceTree = "<group>"; };
+		7AADF8A41824788100227346 /* DCWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCWorkViewController.m; sourceTree = "<group>"; };
+		7AC84EE2182444DD00FE6ED2 /* Dubai Cares Microdonations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dubai Cares Microdonations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AC84EE5182444DD00FE6ED2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7AC84EE7182444DD00FE6ED2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7AC84EE9182444DD00FE6ED2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7AC84EED182444DD00FE6ED2 /* Dubai Cares Microdonations-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dubai Cares Microdonations-Info.plist"; sourceTree = "<group>"; };
+		7AC84EF1182444DD00FE6ED2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AC84EF3182444DD00FE6ED2 /* Dubai Cares Microdonations-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dubai Cares Microdonations-Prefix.pch"; sourceTree = "<group>"; };
+		7AC84EF4182444DD00FE6ED2 /* DCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCAppDelegate.h; sourceTree = "<group>"; };
+		7AC84EF5182444DD00FE6ED2 /* DCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCAppDelegate.m; sourceTree = "<group>"; };
+		7AC84EF8182444DD00FE6ED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AC84EFA182444DD00FE6ED2 /* DCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCViewController.h; sourceTree = "<group>"; };
+		7AC84EFB182444DD00FE6ED2 /* DCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCViewController.m; sourceTree = "<group>"; };
+		7AC84EFD182444DD00FE6ED2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7AC84F03182444DD00FE6ED2 /* Dubai Cares MicrodonationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dubai Cares MicrodonationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AC84F04182444DD00FE6ED2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7AC84F0C182444DD00FE6ED2 /* Dubai Cares MicrodonationsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dubai Cares MicrodonationsTests-Info.plist"; sourceTree = "<group>"; };
+		7AC84F10182444DD00FE6ED2 /* Dubai_Cares_MicrodonationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dubai_Cares_MicrodonationsTests.m; sourceTree = "<group>"; };
+		7AC84F1A1824470500FE6ED2 /* dc-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dc-logo.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7AC246B11823F4B70062D4ED /* Frameworks */ = {
+		7AC84EDF182444DD00FE6ED2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC246BA1823F4B70062D4ED /* CoreGraphics.framework in Frameworks */,
-				7AC246BC1823F4B70062D4ED /* UIKit.framework in Frameworks */,
-				7AC246B81823F4B70062D4ED /* Foundation.framework in Frameworks */,
+				7AC84EE8182444DD00FE6ED2 /* CoreGraphics.framework in Frameworks */,
+				7AC84EEA182444DD00FE6ED2 /* UIKit.framework in Frameworks */,
+				7AC84EE6182444DD00FE6ED2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AC246CC1823F4B70062D4ED /* Frameworks */ = {
+		7AC84F00182444DD00FE6ED2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC246D11823F4B70062D4ED /* XCTest.framework in Frameworks */,
-				7AC246D31823F4B70062D4ED /* UIKit.framework in Frameworks */,
-				7AC246D21823F4B70062D4ED /* Foundation.framework in Frameworks */,
+				7AC84F05182444DD00FE6ED2 /* XCTest.framework in Frameworks */,
+				7AC84F07182444DD00FE6ED2 /* UIKit.framework in Frameworks */,
+				7AC84F06182444DD00FE6ED2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7AC246AB1823F4B70062D4ED = {
+		7AC84ED9182444DD00FE6ED2 = {
 			isa = PBXGroup;
 			children = (
-				7AC246BD1823F4B70062D4ED /* Dubai Cares Microdonations */,
-				7AC246D61823F4B70062D4ED /* Dubai Cares MicrodonationsTests */,
-				7AC246B61823F4B70062D4ED /* Frameworks */,
-				7AC246B51823F4B70062D4ED /* Products */,
+				7AC84EEB182444DD00FE6ED2 /* Dubai Cares Microdonations */,
+				7AC84F0A182444DD00FE6ED2 /* Dubai Cares MicrodonationsTests */,
+				7AC84EE4182444DD00FE6ED2 /* Frameworks */,
+				7AC84EE3182444DD00FE6ED2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7AC246B51823F4B70062D4ED /* Products */ = {
+		7AC84EE3182444DD00FE6ED2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7AC246B41823F4B70062D4ED /* Dubai Cares Microdonations.app */,
-				7AC246CF1823F4B70062D4ED /* Dubai Cares MicrodonationsTests.xctest */,
+				7AC84EE2182444DD00FE6ED2 /* Dubai Cares Microdonations.app */,
+				7AC84F03182444DD00FE6ED2 /* Dubai Cares MicrodonationsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7AC246B61823F4B70062D4ED /* Frameworks */ = {
+		7AC84EE4182444DD00FE6ED2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7AC246B71823F4B70062D4ED /* Foundation.framework */,
-				7AC246B91823F4B70062D4ED /* CoreGraphics.framework */,
-				7AC246BB1823F4B70062D4ED /* UIKit.framework */,
-				7AC246D01823F4B70062D4ED /* XCTest.framework */,
+				7AC84EE5182444DD00FE6ED2 /* Foundation.framework */,
+				7AC84EE7182444DD00FE6ED2 /* CoreGraphics.framework */,
+				7AC84EE9182444DD00FE6ED2 /* UIKit.framework */,
+				7AC84F04182444DD00FE6ED2 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7AC246BD1823F4B70062D4ED /* Dubai Cares Microdonations */ = {
+		7AC84EEB182444DD00FE6ED2 /* Dubai Cares Microdonations */ = {
 			isa = PBXGroup;
 			children = (
-				7AC246E61823F5250062D4ED /* Storyboard.storyboard */,
-				7AC246C61823F4B70062D4ED /* AppDelegate.h */,
-				7AC246C71823F4B70062D4ED /* AppDelegate.m */,
-				7AC246C91823F4B70062D4ED /* Images.xcassets */,
-				7AC246BE1823F4B70062D4ED /* Supporting Files */,
+				7AC84F1C1824470D00FE6ED2 /* img */,
+				7AC84EF4182444DD00FE6ED2 /* DCAppDelegate.h */,
+				7AC84EF5182444DD00FE6ED2 /* DCAppDelegate.m */,
+				7AADF8A31824788100227346 /* DCWorkViewController.h */,
+				7AADF8A41824788100227346 /* DCWorkViewController.m */,
+				7AC84EFA182444DD00FE6ED2 /* DCViewController.h */,
+				7AC84EFB182444DD00FE6ED2 /* DCViewController.m */,
+				7AC84EF7182444DD00FE6ED2 /* Main.storyboard */,
+				7AC84EFD182444DD00FE6ED2 /* Images.xcassets */,
+				7AC84EEC182444DD00FE6ED2 /* Supporting Files */,
 			);
 			path = "Dubai Cares Microdonations";
 			sourceTree = "<group>";
 		};
-		7AC246BE1823F4B70062D4ED /* Supporting Files */ = {
+		7AC84EEC182444DD00FE6ED2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7AC246BF1823F4B70062D4ED /* Dubai Cares Microdonations-Info.plist */,
-				7AC246C01823F4B70062D4ED /* InfoPlist.strings */,
-				7AC246C31823F4B70062D4ED /* main.m */,
-				7AC246C51823F4B70062D4ED /* Dubai Cares Microdonations-Prefix.pch */,
+				7AC84EED182444DD00FE6ED2 /* Dubai Cares Microdonations-Info.plist */,
+				7AC84EF1182444DD00FE6ED2 /* main.m */,
+				7AC84EF3182444DD00FE6ED2 /* Dubai Cares Microdonations-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7AC246D61823F4B70062D4ED /* Dubai Cares MicrodonationsTests */ = {
+		7AC84F0A182444DD00FE6ED2 /* Dubai Cares MicrodonationsTests */ = {
 			isa = PBXGroup;
 			children = (
-				7AC246DC1823F4B70062D4ED /* Dubai_Cares_MicrodonationsTests.m */,
-				7AC246D71823F4B70062D4ED /* Supporting Files */,
+				7AC84F10182444DD00FE6ED2 /* Dubai_Cares_MicrodonationsTests.m */,
+				7AC84F0B182444DD00FE6ED2 /* Supporting Files */,
 			);
 			path = "Dubai Cares MicrodonationsTests";
 			sourceTree = "<group>";
 		};
-		7AC246D71823F4B70062D4ED /* Supporting Files */ = {
+		7AC84F0B182444DD00FE6ED2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7AC246D81823F4B70062D4ED /* Dubai Cares MicrodonationsTests-Info.plist */,
-				7AC246D91823F4B70062D4ED /* InfoPlist.strings */,
+				7AC84F0C182444DD00FE6ED2 /* Dubai Cares MicrodonationsTests-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AC84F1C1824470D00FE6ED2 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				7AADF85518245C3D00227346 /* back3.jpg */,
+				7AADF85618245C3E00227346 /* back4.jpg */,
+				7AADF85718245C3E00227346 /* back5.jpg */,
+				7AADF85818245C3E00227346 /* back6.jpg */,
+				7AC84F1A1824470500FE6ED2 /* dc-logo.jpg */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7AC246B31823F4B70062D4ED /* Dubai Cares Microdonations */ = {
+		7AC84EE1182444DD00FE6ED2 /* Dubai Cares Microdonations */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7AC246E01823F4B70062D4ED /* Build configuration list for PBXNativeTarget "Dubai Cares Microdonations" */;
+			buildConfigurationList = 7AC84F14182444DD00FE6ED2 /* Build configuration list for PBXNativeTarget "Dubai Cares Microdonations" */;
 			buildPhases = (
-				7AC246B01823F4B70062D4ED /* Sources */,
-				7AC246B11823F4B70062D4ED /* Frameworks */,
-				7AC246B21823F4B70062D4ED /* Resources */,
+				7AC84EDE182444DD00FE6ED2 /* Sources */,
+				7AC84EDF182444DD00FE6ED2 /* Frameworks */,
+				7AC84EE0182444DD00FE6ED2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -164,132 +191,131 @@
 			);
 			name = "Dubai Cares Microdonations";
 			productName = "Dubai Cares Microdonations";
-			productReference = 7AC246B41823F4B70062D4ED /* Dubai Cares Microdonations.app */;
+			productReference = 7AC84EE2182444DD00FE6ED2 /* Dubai Cares Microdonations.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7AC246CE1823F4B70062D4ED /* Dubai Cares MicrodonationsTests */ = {
+		7AC84F02182444DD00FE6ED2 /* Dubai Cares MicrodonationsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7AC246E31823F4B70062D4ED /* Build configuration list for PBXNativeTarget "Dubai Cares MicrodonationsTests" */;
+			buildConfigurationList = 7AC84F17182444DD00FE6ED2 /* Build configuration list for PBXNativeTarget "Dubai Cares MicrodonationsTests" */;
 			buildPhases = (
-				7AC246CB1823F4B70062D4ED /* Sources */,
-				7AC246CC1823F4B70062D4ED /* Frameworks */,
-				7AC246CD1823F4B70062D4ED /* Resources */,
+				7AC84EFF182444DD00FE6ED2 /* Sources */,
+				7AC84F00182444DD00FE6ED2 /* Frameworks */,
+				7AC84F01182444DD00FE6ED2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7AC246D51823F4B70062D4ED /* PBXTargetDependency */,
+				7AC84F09182444DD00FE6ED2 /* PBXTargetDependency */,
 			);
 			name = "Dubai Cares MicrodonationsTests";
 			productName = "Dubai Cares MicrodonationsTests";
-			productReference = 7AC246CF1823F4B70062D4ED /* Dubai Cares MicrodonationsTests.xctest */;
+			productReference = 7AC84F03182444DD00FE6ED2 /* Dubai Cares MicrodonationsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7AC246AC1823F4B70062D4ED /* Project object */ = {
+		7AC84EDA182444DD00FE6ED2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DC;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Dubai Cares";
 				TargetAttributes = {
-					7AC246B31823F4B70062D4ED = {
+					7AC84EE1182444DD00FE6ED2 = {
 						DevelopmentTeam = 68BKCT869S;
 					};
-					7AC246CE1823F4B70062D4ED = {
-						TestTargetID = 7AC246B31823F4B70062D4ED;
+					7AC84F02182444DD00FE6ED2 = {
+						TestTargetID = 7AC84EE1182444DD00FE6ED2;
 					};
 				};
 			};
-			buildConfigurationList = 7AC246AF1823F4B70062D4ED /* Build configuration list for PBXProject "Dubai Cares Microdonations" */;
+			buildConfigurationList = 7AC84EDD182444DD00FE6ED2 /* Build configuration list for PBXProject "Dubai Cares Microdonations" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7AC246AB1823F4B70062D4ED;
-			productRefGroup = 7AC246B51823F4B70062D4ED /* Products */;
+			mainGroup = 7AC84ED9182444DD00FE6ED2;
+			productRefGroup = 7AC84EE3182444DD00FE6ED2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7AC246B31823F4B70062D4ED /* Dubai Cares Microdonations */,
-				7AC246CE1823F4B70062D4ED /* Dubai Cares MicrodonationsTests */,
+				7AC84EE1182444DD00FE6ED2 /* Dubai Cares Microdonations */,
+				7AC84F02182444DD00FE6ED2 /* Dubai Cares MicrodonationsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7AC246B21823F4B70062D4ED /* Resources */ = {
+		7AC84EE0182444DD00FE6ED2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC246C21823F4B70062D4ED /* InfoPlist.strings in Resources */,
-				7AC246CA1823F4B70062D4ED /* Images.xcassets in Resources */,
-				7AC246E71823F5250062D4ED /* Storyboard.storyboard in Resources */,
+				7AADF85B18245C3E00227346 /* back5.jpg in Resources */,
+				7AADF85A18245C3E00227346 /* back4.jpg in Resources */,
+				7AADF85918245C3E00227346 /* back3.jpg in Resources */,
+				7AADF85C18245C3E00227346 /* back6.jpg in Resources */,
+				7AC84EFE182444DD00FE6ED2 /* Images.xcassets in Resources */,
+				7AC84EF9182444DD00FE6ED2 /* Main.storyboard in Resources */,
+				7AC84F1B1824470500FE6ED2 /* dc-logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AC246CD1823F4B70062D4ED /* Resources */ = {
+		7AC84F01182444DD00FE6ED2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC246DB1823F4B70062D4ED /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7AC246B01823F4B70062D4ED /* Sources */ = {
+		7AC84EDE182444DD00FE6ED2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC246C81823F4B70062D4ED /* AppDelegate.m in Sources */,
-				7AC246C41823F4B70062D4ED /* main.m in Sources */,
+				7AC84EF2182444DD00FE6ED2 /* main.m in Sources */,
+				7AC84EFC182444DD00FE6ED2 /* DCViewController.m in Sources */,
+				7AADF8A51824788100227346 /* DCWorkViewController.m in Sources */,
+				7AC84EF6182444DD00FE6ED2 /* DCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AC246CB1823F4B70062D4ED /* Sources */ = {
+		7AC84EFF182444DD00FE6ED2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC246DD1823F4B70062D4ED /* Dubai_Cares_MicrodonationsTests.m in Sources */,
+				7AC84F11182444DD00FE6ED2 /* Dubai_Cares_MicrodonationsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7AC246D51823F4B70062D4ED /* PBXTargetDependency */ = {
+		7AC84F09182444DD00FE6ED2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7AC246B31823F4B70062D4ED /* Dubai Cares Microdonations */;
-			targetProxy = 7AC246D41823F4B70062D4ED /* PBXContainerItemProxy */;
+			target = 7AC84EE1182444DD00FE6ED2 /* Dubai Cares Microdonations */;
+			targetProxy = 7AC84F08182444DD00FE6ED2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7AC246C01823F4B70062D4ED /* InfoPlist.strings */ = {
+		7AC84EF7182444DD00FE6ED2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7AC246C11823F4B70062D4ED /* en */,
+				7AC84EF8182444DD00FE6ED2 /* Base */,
 			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7AC246D91823F4B70062D4ED /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AC246DA1823F4B70062D4ED /* en */,
-			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7AC246DE1823F4B70062D4ED /* Debug */ = {
+		7AC84F12182444DD00FE6ED2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -328,7 +354,7 @@
 			};
 			name = Debug;
 		};
-		7AC246DF1823F4B70062D4ED /* Release */ = {
+		7AC84F13182444DD00FE6ED2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -361,39 +387,35 @@
 			};
 			name = Release;
 		};
-		7AC246E11823F4B70062D4ED /* Debug */ = {
+		7AC84F15182444DD00FE6ED2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dubai Cares Microdonations/Dubai Cares Microdonations-Prefix.pch";
 				INFOPLIST_FILE = "Dubai Cares Microdonations/Dubai Cares Microdonations-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		7AC246E21823F4B70062D4ED /* Release */ = {
+		7AC84F16182444DD00FE6ED2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dubai Cares Microdonations/Dubai Cares Microdonations-Prefix.pch";
 				INFOPLIST_FILE = "Dubai Cares Microdonations/Dubai Cares Microdonations-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		7AC246E41823F4B70062D4ED /* Debug */ = {
+		7AC84F18182444DD00FE6ED2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -416,7 +438,7 @@
 			};
 			name = Debug;
 		};
-		7AC246E51823F4B70062D4ED /* Release */ = {
+		7AC84F19182444DD00FE6ED2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -438,32 +460,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7AC246AF1823F4B70062D4ED /* Build configuration list for PBXProject "Dubai Cares Microdonations" */ = {
+		7AC84EDD182444DD00FE6ED2 /* Build configuration list for PBXProject "Dubai Cares Microdonations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AC246DE1823F4B70062D4ED /* Debug */,
-				7AC246DF1823F4B70062D4ED /* Release */,
+				7AC84F12182444DD00FE6ED2 /* Debug */,
+				7AC84F13182444DD00FE6ED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7AC246E01823F4B70062D4ED /* Build configuration list for PBXNativeTarget "Dubai Cares Microdonations" */ = {
+		7AC84F14182444DD00FE6ED2 /* Build configuration list for PBXNativeTarget "Dubai Cares Microdonations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AC246E11823F4B70062D4ED /* Debug */,
-				7AC246E21823F4B70062D4ED /* Release */,
+				7AC84F15182444DD00FE6ED2 /* Debug */,
+				7AC84F16182444DD00FE6ED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		7AC246E31823F4B70062D4ED /* Build configuration list for PBXNativeTarget "Dubai Cares MicrodonationsTests" */ = {
+		7AC84F17182444DD00FE6ED2 /* Build configuration list for PBXNativeTarget "Dubai Cares MicrodonationsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AC246E41823F4B70062D4ED /* Debug */,
-				7AC246E51823F4B70062D4ED /* Release */,
+				7AC84F18182444DD00FE6ED2 /* Debug */,
+				7AC84F19182444DD00FE6ED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7AC246AC1823F4B70062D4ED /* Project object */;
+	rootObject = 7AC84EDA182444DD00FE6ED2 /* Project object */;
 }

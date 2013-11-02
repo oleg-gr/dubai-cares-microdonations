@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="DCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RSu-KF-542"/>
+                        <viewControllerLayoutGuide type="bottom" id="6O9-GS-9dH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVw-27-05q">
+                                <rect key="frame" x="20" y="214" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="sendagift">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFI-a0-eYB">
+                                <rect key="frame" x="170" y="214" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="donate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dc-logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dRW-d4-ghQ">
+                                <rect key="frame" x="36" y="20" width="248" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMm-a2-S7q">
+                                <rect key="frame" x="1" y="505" width="62" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.47058823529411764" green="0.28627450980392155" blue="0.41568627450980389" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="38" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="36" minY="4" maxX="-2" maxY="27"/>
+                                <state key="normal" image="about_us">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="C7Z-2x-bue" kind="modal" modalTransitionStyle="crossDissolve" id="wGd-nX-ywD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EGs-cU-Vgz">
+                                <rect key="frame" x="65" y="505" width="62" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="38" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="40" minY="4" maxX="3" maxY="27"/>
+                                <state key="normal" image="where_we_work">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bZC-qt-T7q" kind="modal" modalTransitionStyle="crossDissolve" id="sqs-wS-bDB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJk-an-wC1">
+                                <rect key="frame" x="129" y="505" width="62" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="38" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="52" minY="4" maxX="11" maxY="27"/>
+                                <state key="normal" image="our_news">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiH-Zm-MBb">
+                                <rect key="frame" x="193" y="505" width="62" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="38" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="19" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="46" minY="4" maxX="9" maxY="27"/>
+                                <state key="normal" image="support_us">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-u1-Uwx">
+                                <rect key="frame" x="257" y="505" width="62" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="27"/>
+                                <inset key="imageEdgeInsets" minX="15" minY="4" maxX="15" maxY="27"/>
+                                <state key="normal" image="contact_us">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Become a Supporter" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="H4P-tl-iKi">
+                                <rect key="frame" x="199" y="539" width="50" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our News" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="WDS-jd-T1H">
+                                <rect key="frame" x="135" y="539" width="50" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Us" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3o-qk-eEv">
+                                <rect key="frame" x="257" y="539" width="62" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where We Work" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="qTU-kd-ftj">
+                                <rect key="frame" x="71" y="539" width="50" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="YGU-KH-Srz">
+                                <rect key="frame" x="7" y="539" width="50" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hFP-hx-5dO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392" y="154"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UDT-d9-55f">
+            <objects>
+                <viewController id="C7Z-2x-bue" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kuN-db-5Z5"/>
+                        <viewControllerLayoutGuide type="bottom" id="FyO-gg-QoQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dYb-0y-Dfh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cHd-lq-xAh">
+                                <rect key="frame" x="0.0" y="-69" width="320" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34S-Xl-fFr">
+                                <rect key="frame" x="92" y="139" width="137" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tut-0p-1tg">
+                                <rect key="frame" x="130" y="487" width="61" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" customClass="UIStoryboardPopoverSegue" modalTransitionStyle="crossDissolve" id="8zK-5A-vee"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCQ-o4-2Hc">
+                                <rect key="frame" x="20" y="192" width="280" height="279"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">In order to identify program opportunities, Dubai Cares assesses the needs of local communities and designs interventions that produce immediate and long-term impact in the lives of children and their communities. To ensure program sustainability, Dubai Cares builds the capacities of local NGOs, government staff and civil societies. Two themes cut across all Dubai Cares programs - gender equality and Monitoring, Evaluation and Learning. Dubai Cares commits significant resources towards Monitoring, Evaluation and Learning activities that not only ensure alignment with its vision and values, but also become a source of valuable information for local and international communities. On gender equality, Dubai Cares' approach aims to secure equal access for boys and girls to safe learning environments with adequate facilities, materials and academic support from qualified teachers and engaged communities.
+School Infrastructure
+
+Access to education in developing countries is often impeded by an extreme shortage or complete lack of schools. Where schools do exist, severely dilapidated buildings, long distances, poor and/or unsafe roads and lack of transportation often make them inaccessible. Limited resources in schools often result in overcrowded classrooms and unsafe buildings. Children, specifically in rural areas, are less likely to enroll in school and more likely to drop out prior to completing their education due to lack of schools and/or teachers. Conflict-affected countries suffer most, with schools ruined or seriously damaged, roads destroyed, under fire or laden with land mines, basic supplies cut off and people fleeing. Dubai Cares works with its partners to establish child-friendly and accessible primary schools especially in marginalized and rural areas of developing countries. Creating and improving physical infrastructure provides a protective environment that reduces risks to children, while giving them a permanent place to learn. A safe and conducive learning environment provides the necessary confidence to parents and communities to enroll and retain children in school. By building and renovating schools with gender specific latrines, providing classroom furniture and equipment, Dubai Cares is increasing access for millions of children, thereby helping increase overall enrollment and retention.
+School Health &amp; Nutrition
+
+Poor health and nutrition negatively impacts childrenâ€™s school attendance and ability to learn. According to the World Food Program, 66 million primary school-aged children in developing countries attend school hungry, with 23 million in Africa alone. Appropriately designed school feeding programs have shown to increase access to education and learning, and improve childrenâ€™s health and nutrition, especially when integrated into comprehensive school health and nutrition programs. In addition, there are over 400 million school-age children infected with parasitic worms, a chronic condition that harms their health and limits their access to education. Intestinal worms can impede childrenâ€™s natural growth and make them underweight, leading to impaired mental and physical development. Worms can also cause anemia and malnutrition, making children too sick or too tired to concentrate in school or attend school at all. Dubai Cares works with its partners to design and implement effective school feeding programs and targeted de-worming interventions that improve basic child health and nutrition that allows children to attend school and more effectively take advantage of those education resources available. Specifically in impoverished communities, providing nutritious meals to children while in schools can alleviate economic pressures for parents who would be more inclined to enroll and retain their children throughout their primary education.
+Water, Sanitation &amp; Hygiene (WASH) in Schools
+
+The process of collecting water daily and the various illnesses caused by poor sanitation result in children is increased absenteeism, especially for girls. Potable water, sanitation facilities and hygiene promotion in schools are essential to ensuring a complete and healthy education experience. Millions of children engage in unhealthy hygiene behavior such as open defecation and the lack of proper hand washing with soap before eating. Such behavior enables the recurrence of water-borne diseases that claim childrenâ€™s lives in many developing countries. Unable to maintain a continuous classroom attendance, children face difficulties in keeping up with material and eventually give up on their education. Furthermore, the absence of gender-specific latrines discourages many girls from remaining in school, especially as they progress into the later years of primary education. Dubai Cares and its partners seek to ensure full integration of WASH (Water, Sanitation &amp; Hygiene) in all its programs, and promote effective hygiene practices in schools and their communities in to order reduce the spread of disease, improve enrollment and attendance in primary schools, improve academic achievement and promote gender equality.
+Quality of Education
+
+School systems in many countries are chronically underfunded and understaffed. According to UNESCOâ€™s 2009 Education for All Global Monitoring Report, in Sub-Saharan Africa alone 3.8 million teachers must be recruited by 2015 in order to achieve universal primary education. Yet the quality of teaching suffers when teachers do not speak the native language of their pupils, cannot read instructional manuals, do not receive training for new curricula, do not know enough content to teach or have little training in current pedagogical methods. Much of the developing world is plagued with high pupil-to-teacher ratios, in some cases, above 60 students to one teacher. In order to sustain and improve primary education and narrow the gap between standards in the developing and developed nations, Dubai Cares works with local agencies to strengthen teacher performance, train principals, review curricula, replenish school supplies, create community dialogue with schools and create Parent-Teacher Associations to generate a positive and active culture of education. By ensuring that children receive quality education and are capable of progressing through their primary cycle with limited or no grade repetition, quality enhancement programs enhance the flow of pupils, hence improving enrollment in the early years of the primary education cycle.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oQ6-ZI-PlF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sNo-IS-zYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="-467"/>
+        </scene>
+        <!--Work View Controller-->
+        <scene sceneID="5iR-qz-5k9">
+            <objects>
+                <viewController id="bZC-qt-T7q" customClass="DCWorkViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ae5-tU-Xkm"/>
+                        <viewControllerLayoutGuide type="bottom" id="UVk-Ym-fgc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lv2-jF-v4h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="741-Ya-HUK">
+                                <rect key="frame" x="0.0" y="-6" width="320" height="138"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where We Work" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-Lm-gWH">
+                                <rect key="frame" x="67" y="135" width="186" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEq-a7-w3s">
+                                <rect key="frame" x="130" y="487" width="61" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="Z7L-zq-Uy2"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tU-4y-Qde">
+                                <rect key="frame" x="20" y="192" width="280" height="279"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3j2-Ya-Leq"/>
+                    <connections>
+                        <outlet property="mapWebView" destination="5tU-4y-Qde" id="ETx-Le-tJX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAN-Nc-AxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="292"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="about_us" width="93" height="373"/>
+        <image name="back3.jpg" width="521" height="392"/>
+        <image name="back4.jpg" width="1620" height="657"/>
+        <image name="back_icon" width="550" height="557"/>
+        <image name="contact_us" width="281" height="298"/>
+        <image name="dc-logo.jpg" width="2275" height="1279"/>
+        <image name="donate" width="590" height="590"/>
+        <image name="our_news" width="447" height="340"/>
+        <image name="sendagift" width="590" height="590"/>
+        <image name="support_us" width="239" height="201"/>
+        <image name="where_we_work" width="247" height="470"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Z7L-zq-Uy2"/>
+    </inferredMetricsTieBreakers>
+</document>

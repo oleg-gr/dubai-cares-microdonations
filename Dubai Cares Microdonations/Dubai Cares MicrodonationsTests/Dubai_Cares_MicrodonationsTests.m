@@ -2,7 +2,7 @@
 //  Dubai_Cares_MicrodonationsTests.m
 //  Dubai Cares MicrodonationsTests
 //
-//  Created by Oleg Grishin on 11/1/13.
+//  Created by Oleg Grishin on 11/2/13.
 //  Copyright (c) 2013 Dubai Cares. All rights reserved.
 //
 

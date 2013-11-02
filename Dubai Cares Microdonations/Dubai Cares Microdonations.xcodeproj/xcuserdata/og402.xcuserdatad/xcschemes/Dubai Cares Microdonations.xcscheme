@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7AC246B31823F4B70062D4ED"
+               BlueprintIdentifier = "7AC84EE1182444DD00FE6ED2"
                BuildableName = "Dubai Cares Microdonations.app"
                BlueprintName = "Dubai Cares Microdonations"
                ReferencedContainer = "container:Dubai Cares Microdonations.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7AC246CE1823F4B70062D4ED"
+               BlueprintIdentifier = "7AC84F02182444DD00FE6ED2"
                BuildableName = "Dubai Cares MicrodonationsTests.xctest"
                BlueprintName = "Dubai Cares MicrodonationsTests"
                ReferencedContainer = "container:Dubai Cares Microdonations.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7AC246B31823F4B70062D4ED"
+            BlueprintIdentifier = "7AC84EE1182444DD00FE6ED2"
             BuildableName = "Dubai Cares Microdonations.app"
             BlueprintName = "Dubai Cares Microdonations"
             ReferencedContainer = "container:Dubai Cares Microdonations.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7AC246B31823F4B70062D4ED"
+            BlueprintIdentifier = "7AC84EE1182444DD00FE6ED2"
             BuildableName = "Dubai Cares Microdonations.app"
             BlueprintName = "Dubai Cares Microdonations"
             ReferencedContainer = "container:Dubai Cares Microdonations.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7AC246B31823F4B70062D4ED"
+            BlueprintIdentifier = "7AC84EE1182444DD00FE6ED2"
             BuildableName = "Dubai Cares Microdonations.app"
             BlueprintName = "Dubai Cares Microdonations"
             ReferencedContainer = "container:Dubai Cares Microdonations.xcodeproj">
