@@ -12,6 +12,8 @@
 		7AADF85B18245C3E00227346 /* back5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AADF85718245C3E00227346 /* back5.jpg */; };
 		7AADF85C18245C3E00227346 /* back6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AADF85818245C3E00227346 /* back6.jpg */; };
 		7AADF8A51824788100227346 /* DCWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AADF8A41824788100227346 /* DCWorkViewController.m */; };
+		7ABB214B183A68760089B3B6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB214A183A68760089B3B6 /* Reachability.m */; };
+		7ABB2161183A8D0B0089B3B6 /* DCNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB2160183A8D0B0089B3B6 /* DCNewsViewController.m */; };
 		7AC84EE6182444DD00FE6ED2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC84EE5182444DD00FE6ED2 /* Foundation.framework */; };
 		7AC84EE8182444DD00FE6ED2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC84EE7182444DD00FE6ED2 /* CoreGraphics.framework */; };
 		7AC84EEA182444DD00FE6ED2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC84EE9182444DD00FE6ED2 /* UIKit.framework */; };
@@ -44,6 +46,10 @@
 		7AADF85818245C3E00227346 /* back6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back6.jpg; sourceTree = "<group>"; };
 		7AADF8A31824788100227346 /* DCWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCWorkViewController.h; sourceTree = "<group>"; };
 		7AADF8A41824788100227346 /* DCWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCWorkViewController.m; sourceTree = "<group>"; };
+		7ABB2149183A68760089B3B6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		7ABB214A183A68760089B3B6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		7ABB215F183A8D0B0089B3B6 /* DCNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCNewsViewController.h; sourceTree = "<group>"; };
+		7ABB2160183A8D0B0089B3B6 /* DCNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCNewsViewController.m; sourceTree = "<group>"; };
 		7AC84EE2182444DD00FE6ED2 /* Dubai Cares Microdonations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dubai Cares Microdonations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC84EE5182444DD00FE6ED2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7AC84EE7182444DD00FE6ED2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,6 +94,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7ABB2148183A685D0089B3B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7ABB2149183A68760089B3B6 /* Reachability.h */,
+				7ABB214A183A68760089B3B6 /* Reachability.m */,
+				7AC84F1C1824470D00FE6ED2 /* img */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		7AC84ED9182444DD00FE6ED2 = {
 			isa = PBXGroup;
 			children = (
@@ -121,13 +137,15 @@
 		7AC84EEB182444DD00FE6ED2 /* Dubai Cares Microdonations */ = {
 			isa = PBXGroup;
 			children = (
-				7AC84F1C1824470D00FE6ED2 /* img */,
+				7ABB2148183A685D0089B3B6 /* Resources */,
 				7AC84EF4182444DD00FE6ED2 /* DCAppDelegate.h */,
 				7AC84EF5182444DD00FE6ED2 /* DCAppDelegate.m */,
 				7AADF8A31824788100227346 /* DCWorkViewController.h */,
 				7AADF8A41824788100227346 /* DCWorkViewController.m */,
 				7AC84EFA182444DD00FE6ED2 /* DCViewController.h */,
 				7AC84EFB182444DD00FE6ED2 /* DCViewController.m */,
+				7ABB215F183A8D0B0089B3B6 /* DCNewsViewController.h */,
+				7ABB2160183A8D0B0089B3B6 /* DCNewsViewController.m */,
 				7AC84EF7182444DD00FE6ED2 /* Main.storyboard */,
 				7AC84EFD182444DD00FE6ED2 /* Images.xcassets */,
 				7AC84EEC182444DD00FE6ED2 /* Supporting Files */,
@@ -282,6 +300,8 @@
 				7AC84EFC182444DD00FE6ED2 /* DCViewController.m in Sources */,
 				7AADF8A51824788100227346 /* DCWorkViewController.m in Sources */,
 				7AC84EF6182444DD00FE6ED2 /* DCAppDelegate.m in Sources */,
+				7ABB2161183A8D0B0089B3B6 /* DCNewsViewController.m in Sources */,
+				7ABB214B183A68760089B3B6 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

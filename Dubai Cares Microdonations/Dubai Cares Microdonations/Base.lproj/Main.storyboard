@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -75,6 +75,9 @@
                                 <state key="normal" image="our_news">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="LRH-mz-bFg" kind="modal" modalTransitionStyle="crossDissolve" id="4bQ-La-ZRV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiH-Zm-MBb">
                                 <rect key="frame" x="193" y="505" width="62" height="62"/>
@@ -237,7 +240,7 @@ School systems in many countries are chronically underfunded and understaffed. A
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="Z7L-zq-Uy2"/>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" identifier="" modalTransitionStyle="crossDissolve" id="Z7L-zq-Uy2"/>
                                 </connections>
                             </button>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tU-4y-Qde">
@@ -250,12 +253,60 @@ School systems in many countries are chronically underfunded and understaffed. A
                     </view>
                     <navigationItem key="navigationItem" id="3j2-Ya-Leq"/>
                     <connections>
-                        <outlet property="mapWebView" destination="5tU-4y-Qde" id="ETx-Le-tJX"/>
+                        <outlet property="mapWebView" destination="5tU-4y-Qde" id="JZU-5s-lh1"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="backToMain1" modalTransitionStyle="crossDissolve" id="PFd-7k-dme"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAN-Nc-AxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928" y="292"/>
+        </scene>
+        <!--News View Controller - Our News Controller-->
+        <scene sceneID="vmF-cn-yKR">
+            <objects>
+                <viewController title="Our News Controller" id="LRH-mz-bFg" customClass="DCNewsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KuT-ef-xPi"/>
+                        <viewControllerLayoutGuide type="bottom" id="sGd-Pk-JXr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9WM-jC-enq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjG-9g-Bc8">
+                                <rect key="frame" x="67" y="28" width="186" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1p-Vn-163">
+                                <rect key="frame" x="130" y="487" width="61" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="SjT-67-hca"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2n-Xf-duL">
+                                <rect key="frame" x="20" y="96" width="280" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NAX-AB-v2k"/>
+                    <connections>
+                        <outlet property="mapWebView" destination="i2n-Xf-duL" id="0ej-XB-OLY"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="backToMain2" modalTransitionStyle="crossDissolve" id="fBf-MM-yrz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZl-8g-XY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="1087"/>
         </scene>
     </scenes>
     <resources>
@@ -277,6 +328,6 @@ School systems in many countries are chronically underfunded and understaffed. A
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Z7L-zq-Uy2"/>
+        <segue reference="SjT-67-hca"/>
     </inferredMetricsTieBreakers>
 </document>

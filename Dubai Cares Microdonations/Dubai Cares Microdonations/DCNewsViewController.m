@@ -1,19 +1,19 @@
 //
-//  DCWorkViewController.m
+//  DCNewsViewController.m
 //  Dubai Cares Microdonations
 //
-//  Created by Oleg Grishin on 11/2/13.
+//  Created by Oleg Grishin on 11/18/13.
 //  Copyright (c) 2013 Dubai Cares. All rights reserved.
 //
 
-#import "DCWorkViewController.h"
+#import "DCNewsViewController.h"
 #import "Reachability.h"
 
-@interface DCWorkViewController ()
+@interface DCNewsViewController ()
 
 @end
 
-@implementation DCWorkViewController
+@implementation DCNewsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,9 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     [self checkInternetConnection];
-    NSURL *websiteUrl = [NSURL URLWithString:@"http://www.dubaicares.ae/en/section/where-we-work"];
+    NSURL *websiteUrl = [NSURL URLWithString:@"http://www.dubaicares.ae/en/section/media-library/news-releases"];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:websiteUrl];
     [self.mapWebView loadRequest:requestObj];
     self.loadingIndicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(self.mapWebView.frame.size.width/2-10, self.mapWebView.frame.size.height/2-10,20,20)];
@@ -37,7 +36,7 @@
     [self.loadingIndicator setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
     [self.loadingIndicator setHidesWhenStopped:YES];
     [self.mapWebView addSubview:self.loadingIndicator];
-    self.mapWebView.scrollView.contentInset = UIEdgeInsetsMake(0, -150, 0, 0);
+
 }
 
 -(void)checkInternetConnection {
@@ -60,7 +59,7 @@
     if (buttonIndex == 0)
     {
         [self checkInternetConnection];
-        NSURL *websiteUrl = [NSURL URLWithString:@"http://www.dubaicares.ae/en/section/where-we-work"];
+        NSURL *websiteUrl = [NSURL URLWithString:@"http://www.dubaicares.ae/en/section/media-library/news-releases"];
         NSURLRequest *requestObj = [NSURLRequest requestWithURL:websiteUrl];
         [self.mapWebView loadRequest:requestObj];
     }
@@ -78,7 +77,6 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [self.loadingIndicator stopAnimating];
-    [self.mapWebView.scrollView setContentOffset:CGPointMake(370, 30) animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
