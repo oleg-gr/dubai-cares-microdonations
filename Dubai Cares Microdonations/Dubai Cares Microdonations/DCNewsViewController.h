@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface DCNewsViewController : UIViewController <UIWebViewDelegate>
+{
+    BOOL isInitialRequest;
+}
 
 
 @property (weak, nonatomic) IBOutlet UIWebView *mapWebView;

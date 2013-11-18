@@ -91,6 +91,9 @@
                                 <state key="normal" image="support_us">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="becomeSupporter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ECC-9q-loS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-u1-Uwx">
                                 <rect key="frame" x="257" y="505" width="62" height="62"/>
@@ -103,6 +106,9 @@
                                 <state key="normal" image="contact_us">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="m60-wI-gjJ" kind="modal" modalTransitionStyle="crossDissolve" id="oHb-QK-R0x"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Become a Supporter" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="H4P-tl-iKi">
                                 <rect key="frame" x="199" y="539" width="50" height="29"/>
@@ -147,6 +153,96 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="392" y="154"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="GAB-e4-IQC">
+            <objects>
+                <viewController id="m60-wI-gjJ" customClass="DCContactViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TLt-IH-De0"/>
+                        <viewControllerLayoutGuide type="bottom" id="him-Wj-SgS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SDR-SN-3Qs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCo-lY-vAV">
+                                <rect key="frame" x="67" y="48" width="186" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r0-9i-hhZ">
+                                <rect key="frame" x="130" y="487" width="61" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="Bum-lA-eB5"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-V7-Vac">
+                                <rect key="frame" x="40" y="116" width="240" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Dubai Cares Offices, Dubai Healthcare 
+City, District 7, Building 16, level 4, 
+Dubai, UAE.
+P.O. Box. 118080, Dubai, UAE
+Phone: +971 4 450 4550
+Fax: +971 4 452 2999</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tR-GI-DYt">
+                                <rect key="frame" x="81" y="299" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="facebook_icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookOpen:" destination="m60-wI-gjJ" eventType="touchUpInside" id="tfh-61-ZPW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbv-y8-udS">
+                                <rect key="frame" x="81" y="386" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="youtube_icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="youtubeOpen:" destination="m60-wI-gjJ" eventType="touchUpInside" id="5eS-8c-aUg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="297-fb-qQu">
+                                <rect key="frame" x="175" y="386" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="instagram_icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="instagramOpen:" destination="m60-wI-gjJ" eventType="touchUpInside" id="aQm-nt-ifF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ob0-R2-SEM">
+                                <rect key="frame" x="175" y="299" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="twitter_icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterOpen:" destination="m60-wI-gjJ" eventType="touchUpInside" id="XNL-1N-gUg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgb-RA-WZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="-227"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UDT-d9-55f">
@@ -208,7 +304,7 @@ School systems in many countries are chronically underfunded and understaffed. A
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNo-IS-zYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941" y="-467"/>
+            <point key="canvasLocation" x="941" y="-2373"/>
         </scene>
         <!--Work View Controller-->
         <scene sceneID="5iR-qz-5k9">
@@ -252,6 +348,7 @@ School systems in many countries are chronically underfunded and understaffed. A
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="3j2-Ya-Leq"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="mapWebView" destination="5tU-4y-Qde" id="JZU-5s-lh1"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="backToMain1" modalTransitionStyle="crossDissolve" id="PFd-7k-dme"/>
@@ -259,7 +356,7 @@ School systems in many countries are chronically underfunded and understaffed. A
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAN-Nc-AxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928" y="292"/>
+            <point key="canvasLocation" x="941" y="-1644"/>
         </scene>
         <!--News View Controller - Our News Controller-->
         <scene sceneID="vmF-cn-yKR">
@@ -306,7 +403,7 @@ School systems in many countries are chronically underfunded and understaffed. A
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZl-8g-XY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="946" y="1087"/>
+            <point key="canvasLocation" x="941" y="-921"/>
         </scene>
     </scenes>
     <resources>
@@ -317,10 +414,14 @@ School systems in many countries are chronically underfunded and understaffed. A
         <image name="contact_us" width="281" height="298"/>
         <image name="dc-logo.jpg" width="2275" height="1279"/>
         <image name="donate" width="590" height="590"/>
+        <image name="facebook_icon.png" width="1024" height="1024"/>
+        <image name="instagram_icon.png" width="512" height="512"/>
         <image name="our_news" width="447" height="340"/>
         <image name="sendagift" width="590" height="590"/>
         <image name="support_us" width="239" height="201"/>
+        <image name="twitter_icon.png" width="300" height="300"/>
         <image name="where_we_work" width="247" height="470"/>
+        <image name="youtube_icon.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -328,6 +429,6 @@ School systems in many countries are chronically underfunded and understaffed. A
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="SjT-67-hca"/>
+        <segue reference="Bum-lA-eB5"/>
     </inferredMetricsTieBreakers>
 </document>

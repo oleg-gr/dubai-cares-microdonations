@@ -20,6 +20,11 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)becomeSupporter:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.dubaicares.ae/en/section/get-involved/become-a-supporter"]];
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

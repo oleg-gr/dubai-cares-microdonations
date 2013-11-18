@@ -14,6 +14,11 @@
 		7AADF8A51824788100227346 /* DCWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AADF8A41824788100227346 /* DCWorkViewController.m */; };
 		7ABB214B183A68760089B3B6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB214A183A68760089B3B6 /* Reachability.m */; };
 		7ABB2161183A8D0B0089B3B6 /* DCNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB2160183A8D0B0089B3B6 /* DCNewsViewController.m */; };
+		7ABB2166183A96580089B3B6 /* facebook_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB2162183A96580089B3B6 /* facebook_icon.png */; };
+		7ABB2167183A96580089B3B6 /* instagram_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB2163183A96580089B3B6 /* instagram_icon.png */; };
+		7ABB2168183A96580089B3B6 /* twitter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB2164183A96580089B3B6 /* twitter_icon.png */; };
+		7ABB2169183A96580089B3B6 /* youtube_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB2165183A96580089B3B6 /* youtube_icon.png */; };
+		7ABB216E183A99AF0089B3B6 /* DCContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB216D183A99AF0089B3B6 /* DCContactViewController.m */; };
 		7AC84EE6182444DD00FE6ED2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC84EE5182444DD00FE6ED2 /* Foundation.framework */; };
 		7AC84EE8182444DD00FE6ED2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC84EE7182444DD00FE6ED2 /* CoreGraphics.framework */; };
 		7AC84EEA182444DD00FE6ED2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC84EE9182444DD00FE6ED2 /* UIKit.framework */; };
@@ -50,6 +55,12 @@
 		7ABB214A183A68760089B3B6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		7ABB215F183A8D0B0089B3B6 /* DCNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCNewsViewController.h; sourceTree = "<group>"; };
 		7ABB2160183A8D0B0089B3B6 /* DCNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCNewsViewController.m; sourceTree = "<group>"; };
+		7ABB2162183A96580089B3B6 /* facebook_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_icon.png; sourceTree = "<group>"; };
+		7ABB2163183A96580089B3B6 /* instagram_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram_icon.png; sourceTree = "<group>"; };
+		7ABB2164183A96580089B3B6 /* twitter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_icon.png; sourceTree = "<group>"; };
+		7ABB2165183A96580089B3B6 /* youtube_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube_icon.png; sourceTree = "<group>"; };
+		7ABB216C183A99AF0089B3B6 /* DCContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCContactViewController.h; sourceTree = "<group>"; };
+		7ABB216D183A99AF0089B3B6 /* DCContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCContactViewController.m; sourceTree = "<group>"; };
 		7AC84EE2182444DD00FE6ED2 /* Dubai Cares Microdonations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dubai Cares Microdonations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC84EE5182444DD00FE6ED2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7AC84EE7182444DD00FE6ED2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,6 +157,8 @@
 				7AC84EFB182444DD00FE6ED2 /* DCViewController.m */,
 				7ABB215F183A8D0B0089B3B6 /* DCNewsViewController.h */,
 				7ABB2160183A8D0B0089B3B6 /* DCNewsViewController.m */,
+				7ABB216C183A99AF0089B3B6 /* DCContactViewController.h */,
+				7ABB216D183A99AF0089B3B6 /* DCContactViewController.m */,
 				7AC84EF7182444DD00FE6ED2 /* Main.storyboard */,
 				7AC84EFD182444DD00FE6ED2 /* Images.xcassets */,
 				7AC84EEC182444DD00FE6ED2 /* Supporting Files */,
@@ -183,6 +196,10 @@
 		7AC84F1C1824470D00FE6ED2 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				7ABB2162183A96580089B3B6 /* facebook_icon.png */,
+				7ABB2163183A96580089B3B6 /* instagram_icon.png */,
+				7ABB2164183A96580089B3B6 /* twitter_icon.png */,
+				7ABB2165183A96580089B3B6 /* youtube_icon.png */,
 				7AADF85518245C3D00227346 /* back3.jpg */,
 				7AADF85618245C3E00227346 /* back4.jpg */,
 				7AADF85718245C3E00227346 /* back5.jpg */,
@@ -272,12 +289,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABB2169183A96580089B3B6 /* youtube_icon.png in Resources */,
 				7AADF85B18245C3E00227346 /* back5.jpg in Resources */,
 				7AADF85A18245C3E00227346 /* back4.jpg in Resources */,
 				7AADF85918245C3E00227346 /* back3.jpg in Resources */,
 				7AADF85C18245C3E00227346 /* back6.jpg in Resources */,
+				7ABB2168183A96580089B3B6 /* twitter_icon.png in Resources */,
 				7AC84EFE182444DD00FE6ED2 /* Images.xcassets in Resources */,
+				7ABB2167183A96580089B3B6 /* instagram_icon.png in Resources */,
 				7AC84EF9182444DD00FE6ED2 /* Main.storyboard in Resources */,
+				7ABB2166183A96580089B3B6 /* facebook_icon.png in Resources */,
 				7AC84F1B1824470500FE6ED2 /* dc-logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +323,7 @@
 				7AC84EF6182444DD00FE6ED2 /* DCAppDelegate.m in Sources */,
 				7ABB2161183A8D0B0089B3B6 /* DCNewsViewController.m in Sources */,
 				7ABB214B183A68760089B3B6 /* Reachability.m in Sources */,
+				7ABB216E183A99AF0089B3B6 /* DCContactViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

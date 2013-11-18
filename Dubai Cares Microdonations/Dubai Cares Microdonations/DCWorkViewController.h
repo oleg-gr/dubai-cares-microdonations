@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface DCWorkViewController : UIViewController <UIWebViewDelegate>
+{
+    BOOL isInitialRequest;
+}
 
 
 @property (weak, nonatomic) IBOutlet UIWebView *mapWebView;

@@ -27,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    isInitialRequest = YES;
     [self checkInternetConnection];
     NSURL *websiteUrl = [NSURL URLWithString:@"http://www.dubaicares.ae/en/section/media-library/news-releases"];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:websiteUrl];
@@ -67,6 +68,17 @@
     {
         [self performSegueWithIdentifier:@"backToMain1" sender:self];
     }
+}
+
+- (BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    if (!isInitialRequest)
+    {
+        NSString *url = [[request URL] absoluteString];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+        return NO;
+    }
+    return YES;
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView

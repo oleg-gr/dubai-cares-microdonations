@@ -27,12 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    [self checkInternetConnection];
+    isInitialRequest = YES;
+	[self checkInternetConnection];
     NSURL *websiteUrl = [NSURL URLWithString:@"http://www.dubaicares.ae/en/section/where-we-work"];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:websiteUrl];
     [self.mapWebView loadRequest:requestObj];
-    self.loadingIndicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(self.mapWebView.frame.size.width/2-10, self.mapWebView.frame.size.height/2-10,20,20)];
+    self.loadingIndicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(self.mapWebView.frame.size.height/2-10, self.mapWebView.frame.size.width/2-10,20,20)];
     self.mapWebView.delegate = self;
     [self.loadingIndicator setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
     [self.loadingIndicator setHidesWhenStopped:YES];
@@ -79,6 +79,18 @@
 {
     [self.loadingIndicator stopAnimating];
     [self.mapWebView.scrollView setContentOffset:CGPointMake(370, 30) animated:YES];
+    isInitialRequest = NO;
+}
+
+- (BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    if (!isInitialRequest)
+    {
+        NSString *url = [[request URL] absoluteString];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+        return NO;
+    }
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
