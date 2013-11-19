@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <AddressBookUI/AddressBookUI.h>
-#import "TPKeyboardAvoidingScrollView.h"
 
 @interface DCChooseContactViewController : UIViewController <ABPeoplePickerNavigationControllerDelegate, UITextFieldDelegate>
 

@@ -12,12 +12,14 @@
 
 -(id)init {
     self = [super init];
-    data = [[NSMutableDictionary alloc] initWithCapacity:3];
+    data = [[NSMutableDictionary alloc] initWithCapacity:6];
     [data setObject:@"none" forKey:@"mode"];
     [data setObject:@"none" forKey:@"occasion"];
     [data setObject:[NSNumber numberWithInt:0] forKey:@"amount"];
     [data setObject:@"none" forKey:@"phone"];
     [data setObject:@"none" forKey:@"name"];
+    [data setObject:@"none" forKey:@"message"];
+    [data setObject:@"none" forKey:@"provider"];
     return self;
 }
 
@@ -32,6 +34,8 @@
     [data setObject:[NSNumber numberWithInt:0] forKey:@"amount"];
     [data setObject:@"none" forKey:@"phone"];
     [data setObject:@"none" forKey:@"name"];
+    [data setObject:@"none" forKey:@"message"];
+    [data setObject:@"none" forKey:@"provider"];
 }
 
 -(id)dataForKey:(NSString*)key {

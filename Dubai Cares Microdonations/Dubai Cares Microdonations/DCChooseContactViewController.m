@@ -30,7 +30,7 @@
     [super viewDidLoad];
     self.phoneNumber.delegate = self;
     DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSLog(@"%@,%@,%@", [appDelegate.appData dataForKey:@"mode"], [appDelegate.appData dataForKey:@"occasion"], [appDelegate.appData dataForKey:@"amount"]);
+    [appDelegate.appData setData:@"none" forKey:@"name"];
     UITapGestureRecognizer *tapOutOfText = [[UITapGestureRecognizer alloc]
                                             initWithTarget:self
                                             action:@selector(dismissKeyboard)];
@@ -76,7 +76,7 @@
     DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
     NSCharacterSet *doNotWant = [NSCharacterSet characterSetWithCharactersInString:@"()-+"];
     NSString *number = [[self.phoneNumber.text componentsSeparatedByCharactersInSet: doNotWant]componentsJoinedByString: @""];
-    NSString *phoneRegex = @"^((\\+)|(05)|(971))[0-9]{10,12}$";
+    NSString *phoneRegex = @"[0-9]{8,14}$";
     NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", phoneRegex];
     BOOL phoneValidates = [phoneTest evaluateWithObject:number];
     if (phoneValidates)

@@ -53,7 +53,14 @@
 {
     DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate.appData setData:amount forKey:@"amount"];
-    [self performSegueWithIdentifier:@"toContact" sender:self];
+    if ([[appDelegate.appData dataForKey:@"mode"] isEqualToString:@"donation"])
+    {
+        [self performSegueWithIdentifier:@"toSelectProvider1" sender:self];
+    }
+    else
+    {
+        [self performSegueWithIdentifier:@"toContact" sender:self];
+    }
 }
 
 - (IBAction)back:(id)sender {
