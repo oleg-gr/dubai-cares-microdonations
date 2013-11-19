@@ -27,10 +27,35 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSLog(@"%@,%@", [appDelegate.appData dataForKey:@"mode"], [appDelegate.appData dataForKey:@"occasion"]);
 	// Do any additional setup after loading the view.
 }
+
+- (IBAction)aed30:(id)sender {
+    [self goNext:[NSNumber numberWithInt:30]];
+}
+- (IBAction)aed60:(id)sender {
+    [self goNext:[NSNumber numberWithInt:60]];
+}
+- (IBAction)aed90:(id)sender {
+    [self goNext:[NSNumber numberWithInt:90]];
+}
+- (IBAction)aed300:(id)sender {
+    [self goNext:[NSNumber numberWithInt:300]];
+}
+- (IBAction)aed600:(id)sender {
+    [self goNext:[NSNumber numberWithInt:600]];
+}
+- (IBAction)aed900:(id)sender {
+    [self goNext:[NSNumber numberWithInt:900]];
+}
+
+-(void)goNext:(NSNumber*)amount
+{
+    DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate.appData setData:amount forKey:@"amount"];
+    [self performSegueWithIdentifier:@"toContact" sender:self];
+}
+
 - (IBAction)back:(id)sender {
     DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
     if ([[appDelegate.appData dataForKey:@"mode"] isEqualToString:@"donation"])

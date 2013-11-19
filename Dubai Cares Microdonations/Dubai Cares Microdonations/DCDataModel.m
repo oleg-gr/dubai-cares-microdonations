@@ -16,6 +16,8 @@
     [data setObject:@"none" forKey:@"mode"];
     [data setObject:@"none" forKey:@"occasion"];
     [data setObject:[NSNumber numberWithInt:0] forKey:@"amount"];
+    [data setObject:@"none" forKey:@"phone"];
+    [data setObject:@"none" forKey:@"name"];
     return self;
 }
 
@@ -28,6 +30,8 @@
     [data setObject:@"none" forKey:@"mode"];
     [data setObject:@"none" forKey:@"occasion"];
     [data setObject:[NSNumber numberWithInt:0] forKey:@"amount"];
+    [data setObject:@"none" forKey:@"phone"];
+    [data setObject:@"none" forKey:@"name"];
 }
 
 -(id)dataForKey:(NSString*)key {

@@ -10,6 +10,10 @@
 		7A5BD3D4183BDBA000794635 /* DCDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BD3D3183BDBA000794635 /* DCDataModel.m */; };
 		7A5BD3D7183BE75500794635 /* DCOccasionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BD3D6183BE75500794635 /* DCOccasionViewController.m */; };
 		7A5BD3DA183BEB1800794635 /* DCAmountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BD3D9183BEB1800794635 /* DCAmountViewController.m */; };
+		7A5BD3DD183BEE6E00794635 /* DCChooseContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BD3DC183BEE6E00794635 /* DCChooseContactViewController.m */; };
+		7A5BD3E0183BFD3D00794635 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BD3DF183BFD3D00794635 /* TPKeyboardAvoidingScrollView.m */; };
+		7A5BD3E3183BFE2800794635 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BD3E2183BFE2800794635 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		7A5BD3E6183C089400794635 /* DCEditMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BD3E5183C089300794635 /* DCEditMessageViewController.m */; };
 		7AADF85918245C3E00227346 /* back3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AADF85518245C3D00227346 /* back3.jpg */; };
 		7AADF85A18245C3E00227346 /* back4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AADF85618245C3E00227346 /* back4.jpg */; };
 		7AADF85B18245C3E00227346 /* back5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AADF85718245C3E00227346 /* back5.jpg */; };
@@ -66,6 +70,14 @@
 		7A5BD3D6183BE75500794635 /* DCOccasionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCOccasionViewController.m; sourceTree = "<group>"; };
 		7A5BD3D8183BEB1800794635 /* DCAmountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCAmountViewController.h; sourceTree = "<group>"; };
 		7A5BD3D9183BEB1800794635 /* DCAmountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCAmountViewController.m; sourceTree = "<group>"; };
+		7A5BD3DB183BEE6E00794635 /* DCChooseContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCChooseContactViewController.h; sourceTree = "<group>"; };
+		7A5BD3DC183BEE6E00794635 /* DCChooseContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCChooseContactViewController.m; sourceTree = "<group>"; };
+		7A5BD3DE183BFD3D00794635 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		7A5BD3DF183BFD3D00794635 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		7A5BD3E1183BFE2800794635 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		7A5BD3E2183BFE2800794635 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		7A5BD3E4183C089300794635 /* DCEditMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEditMessageViewController.h; sourceTree = "<group>"; };
+		7A5BD3E5183C089300794635 /* DCEditMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCEditMessageViewController.m; sourceTree = "<group>"; };
 		7AADF85518245C3D00227346 /* back3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back3.jpg; sourceTree = "<group>"; };
 		7AADF85618245C3E00227346 /* back4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back4.jpg; sourceTree = "<group>"; };
 		7AADF85718245C3E00227346 /* back5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back5.jpg; sourceTree = "<group>"; };
@@ -141,6 +153,10 @@
 		7ABB2148183A685D0089B3B6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7A5BD3DE183BFD3D00794635 /* TPKeyboardAvoidingScrollView.h */,
+				7A5BD3DF183BFD3D00794635 /* TPKeyboardAvoidingScrollView.m */,
+				7A5BD3E1183BFE2800794635 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				7A5BD3E2183BFE2800794635 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 				7ABB2149183A68760089B3B6 /* Reachability.h */,
 				7ABB214A183A68760089B3B6 /* Reachability.m */,
 				7AC84F1C1824470D00FE6ED2 /* img */,
@@ -195,8 +211,12 @@
 				7A5BD3D5183BE75500794635 /* DCOccasionViewController.h */,
 				7A5BD3D6183BE75500794635 /* DCOccasionViewController.m */,
 				7AC84EF7182444DD00FE6ED2 /* Main.storyboard */,
+				7A5BD3E4183C089300794635 /* DCEditMessageViewController.h */,
+				7A5BD3E5183C089300794635 /* DCEditMessageViewController.m */,
 				7A5BD3D8183BEB1800794635 /* DCAmountViewController.h */,
 				7A5BD3D9183BEB1800794635 /* DCAmountViewController.m */,
+				7A5BD3DB183BEE6E00794635 /* DCChooseContactViewController.h */,
+				7A5BD3DC183BEE6E00794635 /* DCChooseContactViewController.m */,
 				7A5BD3D2183BDBA000794635 /* DCDataModel.h */,
 				7A5BD3D3183BDBA000794635 /* DCDataModel.m */,
 				7AC84EFD182444DD00FE6ED2 /* Images.xcassets */,
@@ -382,12 +402,16 @@
 			files = (
 				7AC84EF2182444DD00FE6ED2 /* main.m in Sources */,
 				7AC84EFC182444DD00FE6ED2 /* DCViewController.m in Sources */,
+				7A5BD3DD183BEE6E00794635 /* DCChooseContactViewController.m in Sources */,
+				7A5BD3E6183C089400794635 /* DCEditMessageViewController.m in Sources */,
+				7A5BD3E3183BFE2800794635 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				7A5BD3D4183BDBA000794635 /* DCDataModel.m in Sources */,
 				7A5BD3DA183BEB1800794635 /* DCAmountViewController.m in Sources */,
 				7AADF8A51824788100227346 /* DCWorkViewController.m in Sources */,
 				7A5BD3D7183BE75500794635 /* DCOccasionViewController.m in Sources */,
 				7AC84EF6182444DD00FE6ED2 /* DCAppDelegate.m in Sources */,
 				7ABB2161183A8D0B0089B3B6 /* DCNewsViewController.m in Sources */,
+				7A5BD3E0183BFD3D00794635 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				7ABB214B183A68760089B3B6 /* Reachability.m in Sources */,
 				7ABB216E183A99AF0089B3B6 /* DCContactViewController.m in Sources */,
 			);
