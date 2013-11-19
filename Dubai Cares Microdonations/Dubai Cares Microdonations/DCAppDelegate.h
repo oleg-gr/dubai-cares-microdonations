@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DCDataModel.h"
 
 @interface DCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) DCDataModel *appData;
+
 
 @end
