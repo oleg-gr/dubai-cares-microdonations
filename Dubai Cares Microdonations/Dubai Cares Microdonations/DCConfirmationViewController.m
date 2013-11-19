@@ -7,6 +7,7 @@
 //
 
 #import "DCConfirmationViewController.h"
+#import "DCAppDelegate.h"
 
 @interface DCConfirmationViewController ()
 
@@ -22,11 +23,25 @@
     }
     return self;
 }
+- (IBAction)confirm:(id)sender {
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [self.amount setText:[NSString stringWithFormat:@"%@%@", @"AED ", [appDelegate.appData dataForKey:@"amount"]]];
+    [self.provider setText:[appDelegate.appData dataForKey:@"provider"]];
+    if ([[appDelegate.appData dataForKey:@"mode"] isEqualToString:@"donation"])
+    {
+        [self.message setText:@""];
+        [self.messageLabel setText:@""];
+    }
+    else
+    {
+        [self.message setText:[appDelegate.appData dataForKey:@"message"]];
+        [self.messageLabel setText:@"Your message:"];
+    }
 }
 
 - (void)didReceiveMemoryWarning

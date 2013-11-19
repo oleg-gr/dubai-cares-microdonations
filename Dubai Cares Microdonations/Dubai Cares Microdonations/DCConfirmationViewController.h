@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface DCConfirmationViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextView *amount;
+@property (weak, nonatomic) IBOutlet UITextView *provider;
+@property (weak, nonatomic) IBOutlet UITextView *message;
+@property (weak, nonatomic) IBOutlet UITextView *messageLabel;
 
 @end
