@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="392" y="154"/>
         </scene>
-        <!--View Controller-->
+        <!--Occasion View Controller-->
         <scene sceneID="F5k-Ja-DFN">
             <objects>
-                <viewController id="gi4-H8-TKy" sceneMemberID="viewController">
+                <viewController id="gi4-H8-TKy" customClass="DCOccasionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GR0-eV-jHg"/>
                         <viewControllerLayoutGuide type="bottom" id="syQ-e2-vNR"/>
@@ -199,14 +199,20 @@
                                 <state key="normal" backgroundImage="birthday_icon_blue.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="birthday:" destination="gi4-H8-TKy" eventType="touchUpInside" id="KvH-Fn-PvE"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKG-nI-l6W">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKG-nI-l6W">
                                 <rect key="frame" x="78" y="113" width="58" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Birthday">
                                     <color key="titleColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="birthdayL:" destination="gi4-H8-TKy" eventType="touchUpInside" id="YtI-ed-HJu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDR-n7-im6">
                                 <rect key="frame" x="20" y="161" width="50" height="50"/>
@@ -214,14 +220,20 @@
                                 <state key="normal" backgroundImage="get_well_icon_yellow.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelBetter:" destination="gi4-H8-TKy" eventType="touchUpInside" id="9T7-3V-0Vr"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRp-Et-AeP">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRp-Et-AeP">
                                 <rect key="frame" x="78" y="171" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Feel Better">
                                     <color key="titleColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelBetterL:" destination="gi4-H8-TKy" eventType="touchUpInside" id="sQz-Vg-Ssz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKO-gg-pdg">
                                 <rect key="frame" x="20" y="219" width="50" height="50"/>
@@ -229,14 +241,20 @@
                                 <state key="normal" backgroundImage="ramadan.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="ramadan:" destination="gi4-H8-TKy" eventType="touchUpInside" id="rki-E8-eYB"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwb-Jm-Bwf">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwb-Jm-Bwf">
                                 <rect key="frame" x="78" y="229" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ramadan">
                                     <color key="titleColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="ramadanL:" destination="gi4-H8-TKy" eventType="touchUpInside" id="5cr-1W-er2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se1-8S-eGE">
                                 <rect key="frame" x="20" y="277" width="50" height="50"/>
@@ -244,14 +262,20 @@
                                 <state key="normal" backgroundImage="baby_icon_orange.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="baby:" destination="gi4-H8-TKy" eventType="touchUpInside" id="xXN-Ut-uRd"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bni-GK-bBq">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bni-GK-bBq">
                                 <rect key="frame" x="78" y="287" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Baby">
                                     <color key="titleColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="babyL:" destination="gi4-H8-TKy" eventType="touchUpInside" id="yiY-L7-tUk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7W-BF-7fg">
                                 <rect key="frame" x="20" y="335" width="50" height="50"/>
@@ -259,14 +283,20 @@
                                 <state key="normal" backgroundImage="sympathy_icon_green.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="memory:" destination="gi4-H8-TKy" eventType="touchUpInside" id="VXn-aq-c8h"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jzr-Cy-I38">
+                            <button opaque="NO" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jzr-Cy-I38">
                                 <rect key="frame" x="78" y="345" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="In memory of">
                                     <color key="titleColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="memoryL:" destination="gi4-H8-TKy" eventType="touchUpInside" id="bRv-PV-yn1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcB-Wm-uoW">
                                 <rect key="frame" x="167" y="335" width="50" height="50"/>
@@ -274,14 +304,20 @@
                                 <state key="normal" backgroundImage="christmas.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="xmas:" destination="gi4-H8-TKy" eventType="touchUpInside" id="lt3-Sr-TCV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyG-I5-doN">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyG-I5-doN">
                                 <rect key="frame" x="225" y="345" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Christmas">
                                     <color key="titleColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="xmasL:" destination="gi4-H8-TKy" eventType="touchUpInside" id="HhQ-hF-BIP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q86-v4-ili">
                                 <rect key="frame" x="167" y="393" width="50" height="50"/>
@@ -289,14 +325,20 @@
                                 <state key="normal" backgroundImage="other.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="other:" destination="gi4-H8-TKy" eventType="touchUpInside" id="U6w-9S-MRY"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfv-dA-3Fb">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfv-dA-3Fb">
                                 <rect key="frame" x="225" y="403" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Other">
                                     <color key="titleColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="otherL:" destination="gi4-H8-TKy" eventType="touchUpInside" id="42Z-AW-BOU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FS-Lw-F18">
                                 <rect key="frame" x="20" y="393" width="50" height="50"/>
@@ -304,14 +346,20 @@
                                 <state key="normal" backgroundImage="seasonsgreetings.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="season:" destination="gi4-H8-TKy" eventType="touchUpInside" id="yhN-h8-fB8"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qr1-9r-JXf">
-                                <rect key="frame" x="78" y="403" width="36" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Qr1-9r-JXf">
+                                <rect key="frame" x="78" y="403" width="81" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Baby">
+                                <state key="normal" title="Season's Greetings">
                                     <color key="titleColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="seasonL:" destination="gi4-H8-TKy" eventType="touchUpInside" id="5L5-jj-JAQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ojo-O8-ndG">
                                 <rect key="frame" x="167" y="277" width="50" height="50"/>
@@ -319,14 +367,20 @@
                                 <state key="normal" backgroundImage="anniversary_icon_blue.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="wedding:" destination="gi4-H8-TKy" eventType="touchUpInside" id="0lU-eh-KFf"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyV-D7-Fyz">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyV-D7-Fyz">
                                 <rect key="frame" x="225" y="287" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Wedding">
                                     <color key="titleColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="weddingL:" destination="gi4-H8-TKy" eventType="touchUpInside" id="d6v-O6-g9Q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aty-jI-IXQ">
                                 <rect key="frame" x="167" y="219" width="50" height="50"/>
@@ -334,14 +388,20 @@
                                 <state key="normal" backgroundImage="graduation_icon_yellow.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="graduation:" destination="gi4-H8-TKy" eventType="touchUpInside" id="W0t-QT-Ovf"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Je4-B9-M1S">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Je4-B9-M1S">
                                 <rect key="frame" x="225" y="229" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Graduation">
                                     <color key="titleColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="graduationL:" destination="gi4-H8-TKy" eventType="touchUpInside" id="r08-RK-YPC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VD4-cb-mru">
                                 <rect key="frame" x="167" y="161" width="50" height="50"/>
@@ -349,29 +409,41 @@
                                 <state key="normal" backgroundImage="eid_icon_orange.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="eid:" destination="gi4-H8-TKy" eventType="touchUpInside" id="brw-pS-34f"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gd-8d-xGv">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gd-8d-xGv">
                                 <rect key="frame" x="225" y="171" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Eid">
                                     <color key="titleColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="eidL:" destination="gi4-H8-TKy" eventType="touchUpInside" id="g2j-HJ-Ugq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAI-n3-GOV">
-                                <rect key="frame" x="162" y="103" width="50" height="50"/>
+                                <rect key="frame" x="167" y="103" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="anniversary_green.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="anniversary:" destination="gi4-H8-TKy" eventType="touchUpInside" id="vKL-xZ-H4d"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPx-nj-2C1">
-                                <rect key="frame" x="220" y="113" width="80" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPx-nj-2C1">
+                                <rect key="frame" x="225" y="113" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Anniversary">
                                     <color key="titleColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="anniversaryL:" destination="gi4-H8-TKy" eventType="touchUpInside" id="3mE-26-uG9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -384,10 +456,10 @@
             </objects>
             <point key="canvasLocation" x="941" y="476"/>
         </scene>
-        <!--View Controller-->
+        <!--Amount View Controller-->
         <scene sceneID="HCl-Ph-rkL">
             <objects>
-                <viewController id="fBW-K4-Dpy" sceneMemberID="viewController">
+                <viewController id="fBW-K4-Dpy" customClass="DCAmountViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OeD-oC-7VQ"/>
                         <viewControllerLayoutGuide type="bottom" id="Xoq-K7-1TZ"/>
@@ -412,7 +484,7 @@
                                     <color key="titleShadowColor" red="0.47058826679999999" green="0.27843138579999999" blue="0.41176474089999998" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="XiF-Ht-SiT"/>
+                                    <action selector="back:" destination="fBW-K4-Dpy" eventType="touchUpInside" id="4Hs-f8-UKT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLx-Jn-Byi">
@@ -514,10 +586,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="gi4-H8-TKy" kind="modal" identifier="backToGift" modalTransitionStyle="crossDissolve" id="2xk-tC-wnG"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="backToMain" modalTransitionStyle="crossDissolve" id="rl4-Tz-iMS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBH-dI-BIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1524" y="476"/>
+            <point key="canvasLocation" x="1929" y="296"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="GAB-e4-IQC">
@@ -807,6 +883,7 @@ School systems in many countries are chronically underfunded and understaffed. A
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="fGg-8v-k6M"/>
+        <segue reference="2xk-tC-wnG"/>
         <segue reference="gXw-Fr-n8x"/>
     </inferredMetricsTieBreakers>
 </document>
