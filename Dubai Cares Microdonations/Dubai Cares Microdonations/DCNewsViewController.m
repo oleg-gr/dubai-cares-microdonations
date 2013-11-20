@@ -8,6 +8,7 @@
 
 #import "DCNewsViewController.h"
 #import "Reachability.h"
+#import "SVModalWebViewController.h"
 
 @interface DCNewsViewController ()
 
@@ -37,7 +38,6 @@
     [self.loadingIndicator setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
     [self.loadingIndicator setHidesWhenStopped:YES];
     [self.mapWebView addSubview:self.loadingIndicator];
-
 }
 
 -(void)checkInternetConnection {
@@ -75,7 +75,8 @@
     if (!isInitialRequest)
     {
         NSString *url = [[request URL] absoluteString];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+        SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress:url];
+        [self presentViewController:webViewController animated:YES completion:NULL];
         return NO;
     }
     return YES;
@@ -89,6 +90,7 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [self.loadingIndicator stopAnimating];
+    isInitialRequest = NO;
 }
 
 - (void)didReceiveMemoryWarning

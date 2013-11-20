@@ -8,6 +8,7 @@
 
 #import "DCWorkViewController.h"
 #import "Reachability.h"
+#import "SVModalWebViewController.h"
 
 @interface DCWorkViewController ()
 
@@ -87,7 +88,8 @@
     if (!isInitialRequest)
     {
         NSString *url = [[request URL] absoluteString];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+        SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress:url];
+        [self presentViewController:webViewController animated:YES completion:NULL];
         return NO;
     }
     return YES;

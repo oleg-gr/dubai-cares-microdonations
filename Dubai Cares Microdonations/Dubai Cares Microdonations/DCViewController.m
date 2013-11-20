@@ -8,6 +8,7 @@
 
 #import "DCViewController.h"
 #import "DCAppDelegate.h"
+#import "SVModalWebViewController.h"
 
 @interface DCViewController ()
 
@@ -23,7 +24,8 @@
 }
 
 - (IBAction)becomeSupporter:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.dubaicares.ae/en/section/get-involved/become-a-supporter"]];
+    SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress:@"http://www.dubaicares.ae/en/section/get-involved/become-a-supporter"];
+    [self presentViewController:webViewController animated:YES completion:NULL];
 }
 
 - (IBAction)sendGift:(id)sender {

@@ -7,6 +7,7 @@
 //
 
 #import "DCContactViewController.h"
+#import "SVModalWebViewController.h"
 
 @interface DCContactViewController ()
 
@@ -29,16 +30,20 @@
 	// Do any additional setup after loading the view.
 }
 - (IBAction)facebookOpen:(id)sender {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.facebook.com/DubaiCares"]];
+    SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress:@"https://www.facebook.com/DubaiCares"];
+    [self presentViewController:webViewController animated:YES completion:NULL];
 }
 - (IBAction)twitterOpen:(id)sender {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/DubaiCares"]];
+    SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress:@"https://twitter.com/DubaiCares"];
+    [self presentViewController:webViewController animated:YES completion:NULL];
 }
 - (IBAction)youtubeOpen:(id)sender {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.youtube.com/user/DubaiCaresUAE"]];
+    SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress:@"http://www.youtube.com/user/DubaiCaresUAE"];
+    [self presentViewController:webViewController animated:YES completion:NULL];
 }
 - (IBAction)instagramOpen:(id)sender {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://instagram.com/dubaicares"]];
+        SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress:@"http://instagram.com/dubaicares"];
+    [self presentViewController:webViewController animated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning
