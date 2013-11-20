@@ -19,7 +19,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVw-27-05q">
                                 <rect key="frame" x="20" y="214" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="sendagift">
+                                <state key="normal" backgroundImage="sendagift.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -29,7 +29,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFI-a0-eYB">
                                 <rect key="frame" x="170" y="214" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="donate">
+                                <state key="normal" backgroundImage="donate.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -48,7 +48,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="38" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="36" minY="4" maxX="-2" maxY="27"/>
-                                <state key="normal" image="about_us">
+                                <state key="normal" image="about_us.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -63,7 +63,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="38" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="40" minY="4" maxX="3" maxY="27"/>
-                                <state key="normal" image="where_we_work">
+                                <state key="normal" image="where_we_work.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -78,7 +78,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="38" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="52" minY="4" maxX="11" maxY="27"/>
-                                <state key="normal" image="our_news">
+                                <state key="normal" image="our_news.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -94,7 +94,7 @@
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="38" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="19" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="46" minY="4" maxX="9" maxY="27"/>
-                                <state key="normal" image="support_us">
+                                <state key="normal" image="support_us.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -109,7 +109,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="27"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="4" maxX="15" maxY="27"/>
-                                <state key="normal" image="contact_us">
+                                <state key="normal" image="contact_us.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -186,7 +186,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Paj-1c-CT1">
                                 <rect key="frame" x="130" y="487" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="back_icon">
+                                <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -479,7 +479,7 @@
                                 <rect key="frame" x="130" y="487" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="back_icon">
+                                <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleColor" red="0.47058826684951782" green="0.27843138575553894" blue="0.41176474094390869" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" red="0.47058826679999999" green="0.27843138579999999" blue="0.41176474089999998" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
@@ -690,7 +690,7 @@
                                 <rect key="frame" x="130" y="480" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="back_icon">
+                                <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleColor" red="0.47058826679999999" green="0.27843138579999999" blue="0.41176474089999998" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" red="0.47058826679999999" green="0.27843138579999999" blue="0.41176474089999998" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
@@ -727,7 +727,7 @@
                                 <rect key="frame" x="130" y="487" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="back_icon">
+                                <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleColor" red="0.47058826679999999" green="0.27843138579999999" blue="0.41176474089999998" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" red="0.47058826679999999" green="0.27843138579999999" blue="0.41176474089999998" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
@@ -817,7 +817,7 @@
                                 <rect key="frame" x="130" y="487" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="back_icon">
+                                <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleColor" red="0.47058826679999999" green="0.27843138579999999" blue="0.41176474089999998" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" red="0.47058826679999999" green="0.27843138579999999" blue="0.41176474089999998" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
@@ -1053,7 +1053,7 @@ your mobile credit. Click “OK” and then "send" in the appeared dialog. These
                                 <rect key="frame" x="130" y="487" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="back_icon">
+                                <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleColor" red="0.47058826679999999" green="0.27843138579999999" blue="0.41176474089999998" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" red="0.47058826679999999" green="0.27843138579999999" blue="0.41176474089999998" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
@@ -1118,7 +1118,7 @@ your mobile credit. Click “OK” and then "send" in the appeared dialog. These
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r0-9i-hhZ">
                                 <rect key="frame" x="130" y="487" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="back_icon">
+                                <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1211,7 +1211,7 @@ Fax: +971 4 452 2999</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cHd-lq-xAh">
-                                <rect key="frame" x="0.0" y="-69" width="320" height="240"/>
+                                <rect key="frame" x="0.0" y="-93" width="320" height="240"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34S-Xl-fFr">
@@ -1224,7 +1224,7 @@ Fax: +971 4 452 2999</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tut-0p-1tg">
                                 <rect key="frame" x="130" y="487" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="back_icon">
+                                <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1241,13 +1241,13 @@ School Infrastructure
 Access to education in developing countries is often impeded by an extreme shortage or complete lack of schools. Where schools do exist, severely dilapidated buildings, long distances, poor and/or unsafe roads and lack of transportation often make them inaccessible. Limited resources in schools often result in overcrowded classrooms and unsafe buildings. Children, specifically in rural areas, are less likely to enroll in school and more likely to drop out prior to completing their education due to lack of schools and/or teachers. Conflict-affected countries suffer most, with schools ruined or seriously damaged, roads destroyed, under fire or laden with land mines, basic supplies cut off and people fleeing. Dubai Cares works with its partners to establish child-friendly and accessible primary schools especially in marginalized and rural areas of developing countries. Creating and improving physical infrastructure provides a protective environment that reduces risks to children, while giving them a permanent place to learn. A safe and conducive learning environment provides the necessary confidence to parents and communities to enroll and retain children in school. By building and renovating schools with gender specific latrines, providing classroom furniture and equipment, Dubai Cares is increasing access for millions of children, thereby helping increase overall enrollment and retention.
 School Health &amp; Nutrition
 
-Poor health and nutrition negatively impacts childrenâ€™s school attendance and ability to learn. According to the World Food Program, 66 million primary school-aged children in developing countries attend school hungry, with 23 million in Africa alone. Appropriately designed school feeding programs have shown to increase access to education and learning, and improve childrenâ€™s health and nutrition, especially when integrated into comprehensive school health and nutrition programs. In addition, there are over 400 million school-age children infected with parasitic worms, a chronic condition that harms their health and limits their access to education. Intestinal worms can impede childrenâ€™s natural growth and make them underweight, leading to impaired mental and physical development. Worms can also cause anemia and malnutrition, making children too sick or too tired to concentrate in school or attend school at all. Dubai Cares works with its partners to design and implement effective school feeding programs and targeted de-worming interventions that improve basic child health and nutrition that allows children to attend school and more effectively take advantage of those education resources available. Specifically in impoverished communities, providing nutritious meals to children while in schools can alleviate economic pressures for parents who would be more inclined to enroll and retain their children throughout their primary education.
+Poor health and nutrition negatively impacts children's school attendance and ability to learn. According to the World Food Program, 66 million primary school-aged children in developing countries attend school hungry, with 23 million in Africa alone. Appropriately designed school feeding programs have shown to increase access to education and learning, and improve children's health and nutrition, especially when integrated into comprehensive school health and nutrition programs. In addition, there are over 400 million school-age children infected with parasitic worms, a chronic condition that harms their health and limits their access to education. Intestinal worms can impede children's natural growth and make them underweight, leading to impaired mental and physical development. Worms can also cause anemia and malnutrition, making children too sick or too tired to concentrate in school or attend school at all. Dubai Cares works with its partners to design and implement effective school feeding programs and targeted de-worming interventions that improve basic child health and nutrition that allows children to attend school and more effectively take advantage of those education resources available. Specifically in impoverished communities, providing nutritious meals to children while in schools can alleviate economic pressures for parents who would be more inclined to enroll and retain their children throughout their primary education.
 Water, Sanitation &amp; Hygiene (WASH) in Schools
 
-The process of collecting water daily and the various illnesses caused by poor sanitation result in children is increased absenteeism, especially for girls. Potable water, sanitation facilities and hygiene promotion in schools are essential to ensuring a complete and healthy education experience. Millions of children engage in unhealthy hygiene behavior such as open defecation and the lack of proper hand washing with soap before eating. Such behavior enables the recurrence of water-borne diseases that claim childrenâ€™s lives in many developing countries. Unable to maintain a continuous classroom attendance, children face difficulties in keeping up with material and eventually give up on their education. Furthermore, the absence of gender-specific latrines discourages many girls from remaining in school, especially as they progress into the later years of primary education. Dubai Cares and its partners seek to ensure full integration of WASH (Water, Sanitation &amp; Hygiene) in all its programs, and promote effective hygiene practices in schools and their communities in to order reduce the spread of disease, improve enrollment and attendance in primary schools, improve academic achievement and promote gender equality.
+The process of collecting water daily and the various illnesses caused by poor sanitation result in children is increased absenteeism, especially for girls. Potable water, sanitation facilities and hygiene promotion in schools are essential to ensuring a complete and healthy education experience. Millions of children engage in unhealthy hygiene behavior such as open defecation and the lack of proper hand washing with soap before eating. Such behavior enables the recurrence of water-borne diseases that claim children's lives in many developing countries. Unable to maintain a continuous classroom attendance, children face difficulties in keeping up with material and eventually give up on their education. Furthermore, the absence of gender-specific latrines discourages many girls from remaining in school, especially as they progress into the later years of primary education. Dubai Cares and its partners seek to ensure full integration of WASH (Water, Sanitation &amp; Hygiene) in all its programs, and promote effective hygiene practices in schools and their communities in to order reduce the spread of disease, improve enrollment and attendance in primary schools, improve academic achievement and promote gender equality.
 Quality of Education
 
-School systems in many countries are chronically underfunded and understaffed. According to UNESCOâ€™s 2009 Education for All Global Monitoring Report, in Sub-Saharan Africa alone 3.8 million teachers must be recruited by 2015 in order to achieve universal primary education. Yet the quality of teaching suffers when teachers do not speak the native language of their pupils, cannot read instructional manuals, do not receive training for new curricula, do not know enough content to teach or have little training in current pedagogical methods. Much of the developing world is plagued with high pupil-to-teacher ratios, in some cases, above 60 students to one teacher. In order to sustain and improve primary education and narrow the gap between standards in the developing and developed nations, Dubai Cares works with local agencies to strengthen teacher performance, train principals, review curricula, replenish school supplies, create community dialogue with schools and create Parent-Teacher Associations to generate a positive and active culture of education. By ensuring that children receive quality education and are capable of progressing through their primary cycle with limited or no grade repetition, quality enhancement programs enhance the flow of pupils, hence improving enrollment in the early years of the primary education cycle.</string>
+School systems in many countries are chronically underfunded and understaffed. According to UNESCO's 2009 Education for All Global Monitoring Report, in Sub-Saharan Africa alone 3.8 million teachers must be recruited by 2015 in order to achieve universal primary education. Yet the quality of teaching suffers when teachers do not speak the native language of their pupils, cannot read instructional manuals, do not receive training for new curricula, do not know enough content to teach or have little training in current pedagogical methods. Much of the developing world is plagued with high pupil-to-teacher ratios, in some cases, above 60 students to one teacher. In order to sustain and improve primary education and narrow the gap between standards in the developing and developed nations, Dubai Cares works with local agencies to strengthen teacher performance, train principals, review curricula, replenish school supplies, create community dialogue with schools and create Parent-Teacher Associations to generate a positive and active culture of education. By ensuring that children receive quality education and are capable of progressing through their primary cycle with limited or no grade repetition, quality enhancement programs enhance the flow of pupils, hence improving enrollment in the early years of the primary education cycle.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1286,7 +1286,7 @@ School systems in many countries are chronically underfunded and understaffed. A
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEq-a7-w3s">
                                 <rect key="frame" x="130" y="487" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="back_icon">
+                                <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1334,14 +1334,14 @@ School systems in many countries are chronically underfunded and understaffed. A
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1p-Vn-163">
                                 <rect key="frame" x="130" y="487" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="back_icon">
+                                <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="SjT-67-hca"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2n-Xf-duL">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2n-Xf-duL">
                                 <rect key="frame" x="20" y="96" width="280" height="374"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1361,32 +1361,32 @@ School systems in many countries are chronically underfunded and understaffed. A
         </scene>
     </scenes>
     <resources>
-        <image name="about_us" width="93" height="373"/>
+        <image name="about_us.png" width="187" height="747"/>
         <image name="anniversary_green.png" width="1183" height="1183"/>
         <image name="anniversary_icon_blue.png" width="925" height="925"/>
         <image name="baby_icon_orange.png" width="1181" height="1181"/>
         <image name="back3.jpg" width="521" height="392"/>
         <image name="back4.jpg" width="1620" height="657"/>
-        <image name="back_icon" width="550" height="557"/>
+        <image name="back_icon.png" width="1100" height="1115"/>
         <image name="birthday_icon_blue.png" width="1181" height="1181"/>
         <image name="christmas.png" width="1181" height="1181"/>
-        <image name="contact_us" width="281" height="298"/>
+        <image name="contact_us.png" width="563" height="597"/>
         <image name="dc-logo.jpg" width="2275" height="1279"/>
-        <image name="donate" width="590" height="590"/>
+        <image name="donate.png" width="1181" height="1181"/>
         <image name="eid_icon_orange.png" width="1181" height="1181"/>
         <image name="facebook_icon.png" width="1024" height="1024"/>
         <image name="get_well_icon_yellow.png" width="1181" height="1181"/>
         <image name="graduation_icon_yellow.png" width="1141" height="1141"/>
         <image name="instagram_icon.png" width="512" height="512"/>
         <image name="other.png" width="1181" height="1181"/>
-        <image name="our_news" width="447" height="340"/>
+        <image name="our_news.png" width="894" height="680"/>
         <image name="ramadan.png" width="1170" height="1173"/>
         <image name="seasonsgreetings.png" width="1181" height="1181"/>
-        <image name="sendagift" width="590" height="590"/>
-        <image name="support_us" width="239" height="201"/>
+        <image name="sendagift.png" width="1181" height="1181"/>
+        <image name="support_us.png" width="478" height="403"/>
         <image name="sympathy_icon_green.png" width="848" height="848"/>
         <image name="twitter_icon.png" width="300" height="300"/>
-        <image name="where_we_work" width="247" height="470"/>
+        <image name="where_we_work.png" width="495" height="941"/>
         <image name="youtube_icon.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1395,11 +1395,11 @@ School systems in many countries are chronically underfunded and understaffed. A
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="dcZ-r6-Xl4"/>
         <segue reference="EN0-ia-rsx"/>
-        <segue reference="0wA-o1-l73"/>
+        <segue reference="QjP-rt-HUw"/>
         <segue reference="OPO-xd-y32"/>
-        <segue reference="2gb-sd-zCc"/>
-        <segue reference="2xk-tC-wnG"/>
+        <segue reference="0uB-mf-3qS"/>
+        <segue reference="8zK-5A-vee"/>
+        <segue reference="Vdq-VX-1Qa"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -42,7 +42,7 @@
 }
 
 -(void)checkInternetConnection {
-    Reachability *r = [Reachability reachabilityWithHostName:@"www.google.com"];
+    Reachability *r = [Reachability reachabilityWithHostname:@"www.google.com"];
     
     NetworkStatus internetStatus = [r currentReachabilityStatus];
     

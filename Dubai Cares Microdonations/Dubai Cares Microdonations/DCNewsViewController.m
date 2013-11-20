@@ -9,6 +9,7 @@
 #import "DCNewsViewController.h"
 #import "Reachability.h"
 #import "SVModalWebViewController.h"
+#import "AFNetworking.h"
 
 @interface DCNewsViewController ()
 
@@ -37,11 +38,13 @@
     self.mapWebView.delegate = self;
     [self.loadingIndicator setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
     [self.loadingIndicator setHidesWhenStopped:YES];
+    [self.mapWebView.scrollView setBounces:NO];
+    self.mapWebView.scrollView.contentInset = UIEdgeInsetsMake(-165, 0, -130, -95);
     [self.mapWebView addSubview:self.loadingIndicator];
 }
 
 -(void)checkInternetConnection {
-    Reachability *r = [Reachability reachabilityWithHostName:@"www.google.com"];
+    Reachability *r = [Reachability reachabilityWithHostname:@"www.google.com"];
     
     NetworkStatus internetStatus = [r currentReachabilityStatus];
     
@@ -66,7 +69,7 @@
     }
     else
     {
-        [self performSegueWithIdentifier:@"backToMain1" sender:self];
+        [self performSegueWithIdentifier:@"backToMain2" sender:self];
     }
 }
 
