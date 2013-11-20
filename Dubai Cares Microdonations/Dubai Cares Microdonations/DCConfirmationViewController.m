@@ -123,7 +123,6 @@
             }
                 
             case MessageComposeResultSent:
-                NSLog(@"asdas");
                 [self performSegueWithIdentifier:@"toThankYou" sender:self];
                 break;
                 

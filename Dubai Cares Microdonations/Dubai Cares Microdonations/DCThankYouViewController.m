@@ -7,6 +7,8 @@
 //
 
 #import "DCThankYouViewController.h"
+#import <Social/Social.h>
+#import "DCAppDelegate.h"
 
 @interface DCThankYouViewController ()
 
@@ -21,6 +23,37 @@
         // Custom initialization
     }
     return self;
+}
+- (IBAction)postFacebook:(id)sender {
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        SLComposeViewController *facebookSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
+        [facebookSheet setInitialText:[NSString stringWithFormat:@"I just donated AED %@ to Dubai Cares!", [appDelegate.appData dataForKey:@"amount"]]];
+        [facebookSheet addURL:[NSURL URLWithString:@"http://www.dubaicares.ae/en/donation"]];
+        [self presentViewController:facebookSheet animated:YES completion:Nil];
+    }
+    else
+    {
+        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Not logged in to Facebook." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [warningAlert show];
+    }
+}
+- (IBAction)postTweeter:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
+        SLComposeViewController *tweetSheet = [SLComposeViewController
+                                               composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tweetSheet setInitialText:[NSString stringWithFormat:@"I just donated AED %@ to Dubai Cares!", [appDelegate.appData dataForKey:@"amount"]]];
+        [tweetSheet addURL:[NSURL URLWithString:@"http://www.dubaicares.ae/en/donation"]];
+        [self presentViewController:tweetSheet animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Not logged in to Tweeter." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [warningAlert show];
+    }
 }
 
 - (void)viewDidLoad

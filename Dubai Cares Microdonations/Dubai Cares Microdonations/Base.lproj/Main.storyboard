@@ -661,11 +661,11 @@
                                 <color key="textColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KIi-jT-72O">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KIi-jT-72O">
                                 <rect key="frame" x="61" y="293" width="198" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLZ-rb-pVS">
                                 <rect key="frame" x="128" y="351" width="65" height="36"/>
@@ -733,7 +733,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="dsX-ho-4GH" eventType="touchUpInside" id="OpS-7t-oCx"/>
-                                    <segue destination="dsX-ho-4GH" kind="modal" modalTransitionStyle="crossDissolve" id="rxk-VC-yiK"/>
+                                    <action selector="backToContact:" destination="lyM-ix-VMG" eventType="touchUpInside" id="wPe-yH-oOg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type a message:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94t-um-GEE">
@@ -794,6 +794,7 @@
                     <connections>
                         <outlet property="message" destination="tnD-Zc-cMa" id="X16-Ql-vLN"/>
                         <segue destination="fH3-0K-n6T" kind="modal" identifier="toSelectProvider" modalTransitionStyle="crossDissolve" id="qS8-qA-JwY"/>
+                        <segue destination="dsX-ho-4GH" kind="modal" identifier="backToContact" modalTransitionStyle="crossDissolve" id="OPO-xd-y32"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXr-AV-bg5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -882,10 +883,10 @@
             </objects>
             <point key="canvasLocation" x="1897" y="-921"/>
         </scene>
-        <!--View Controller-->
+        <!--Thank You View Controller-->
         <scene sceneID="ZUJ-y7-yq4">
             <objects>
-                <viewController id="aQ3-K8-vHL" sceneMemberID="viewController">
+                <viewController id="aQ3-K8-vHL" customClass="DCThankYouViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h9J-Q8-9Hj"/>
                         <viewControllerLayoutGuide type="bottom" id="SYd-Ln-AeA"/>
@@ -935,7 +936,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO0-vB-j3Q">
-                                <rect key="frame" x="71" y="452" width="60" height="60"/>
+                                <rect key="frame" x="71" y="452" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="facebook_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -946,9 +947,12 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="postFacebook:" destination="aQ3-K8-vHL" eventType="touchUpInside" id="Q1h-qB-zy3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsZ-jk-Vtu">
-                                <rect key="frame" x="189" y="452" width="60" height="60"/>
+                                <rect key="frame" x="189" y="452" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="twitter_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -959,6 +963,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="postTweeter:" destination="aQ3-K8-vHL" eventType="touchUpInside" id="xle-So-W2i"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1390,9 +1397,9 @@ School systems in many countries are chronically underfunded and understaffed. A
     <inferredMetricsTieBreakers>
         <segue reference="dcZ-r6-Xl4"/>
         <segue reference="EN0-ia-rsx"/>
-        <segue reference="QjP-rt-HUw"/>
-        <segue reference="0vI-ad-BQ6"/>
+        <segue reference="0wA-o1-l73"/>
+        <segue reference="OPO-xd-y32"/>
+        <segue reference="2gb-sd-zCc"/>
         <segue reference="2xk-tC-wnG"/>
-        <segue reference="VtZ-Vz-NsU"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -103,6 +103,11 @@
     [self.message setText:myString];
 	// Do any additional setup after loading the view.
 }
+- (IBAction)backToContact:(id)sender {
+    DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate.appData setData:@"none" forKey:@"name"];
+    [self performSegueWithIdentifier:@"backToContact" sender:self];
+}
 
 - (IBAction)clear:(id)sender {
     [self.message setText:@""];

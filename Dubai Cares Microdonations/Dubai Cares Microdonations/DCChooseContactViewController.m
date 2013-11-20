@@ -28,15 +28,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.phoneNumber.delegate = self;
+    
+    UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+    numberToolbar.barStyle = UIBarStyleDefault;
+    numberToolbar.items = [NSArray arrayWithObjects:
+                           [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
+                           [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneWithNumberPad)],
+                           nil];
+    [numberToolbar sizeToFit];
+    self.phoneNumber.inputAccessoryView = numberToolbar;
+    
     DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate.appData setData:@"none" forKey:@"name"];
+    NSString *phone = [appDelegate.appData dataForKey:@"phone"];
+    if (![phone isEqualToString:@"none"])
+    {
+        [self.phoneNumber setText:phone];
+    }
     UITapGestureRecognizer *tapOutOfText = [[UITapGestureRecognizer alloc]
                                             initWithTarget:self
                                             action:@selector(dismissKeyboard)];
     [tapOutOfText setCancelsTouchesInView:NO];
     [self.view addGestureRecognizer:tapOutOfText];
 	// Do any additional setup after loading the view.
+}
+
+-(void)doneWithNumberPad{
+//    NSString *numberFromTheKeyboard = numberTextField.text;
+    [self.phoneNumber resignFirstResponder];
 }
 
 -(void)dismissKeyboard
@@ -102,13 +121,6 @@
 
 - (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier
 {
-    return NO;
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    [textField resignFirstResponder];
-    [self goNextLogic];
     return NO;
 }
 
