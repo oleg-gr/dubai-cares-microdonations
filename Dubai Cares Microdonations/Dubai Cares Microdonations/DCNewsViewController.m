@@ -9,7 +9,6 @@
 #import "DCNewsViewController.h"
 #import "Reachability.h"
 #import "SVModalWebViewController.h"
-#import "AFNetworking.h"
 
 @interface DCNewsViewController ()
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="m60-wI-gjJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVw-27-05q">
-                                <rect key="frame" x="20" y="214" width="130" height="130"/>
+                                <rect key="frame" x="20" y="204" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="sendagift.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFI-a0-eYB">
-                                <rect key="frame" x="170" y="214" width="130" height="130"/>
+                                <rect key="frame" x="170" y="204" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="donate.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,7 +40,7 @@
                                 <rect key="frame" x="36" y="20" width="248" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMm-a2-S7q">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMm-a2-S7q">
                                 <rect key="frame" x="1" y="505" width="62" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.47058823529411764" green="0.28627450980392155" blue="0.41568627450980389" alpha="1" colorSpace="deviceRGB"/>
@@ -1104,20 +1104,28 @@ your mobile credit. Click “OK” and then "send" in the appeared dialog. These
                         <viewControllerLayoutGuide type="top" id="TLt-IH-De0"/>
                         <viewControllerLayoutGuide type="bottom" id="him-Wj-SgS"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="SDR-SN-3Qs">
+                    <view key="view" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" id="SDR-SN-3Qs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCo-lY-vAV">
-                                <rect key="frame" x="67" y="48" width="186" height="60"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Contact Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCo-lY-vAV">
+                                <rect key="frame" x="27" y="144" width="186" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="bri-OH-A7m"/>
+                                    <constraint firstAttribute="height" constant="48" id="ljJ-f5-3zi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r0-9i-hhZ">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r0-9i-hhZ">
                                 <rect key="frame" x="130" y="487" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="nM7-DR-LvK"/>
+                                    <constraint firstAttribute="height" constant="61" id="yrZ-9i-yuM"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1125,10 +1133,14 @@ your mobile credit. Click “OK” and then "send" in the appeared dialog. These
                                     <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="Bum-lA-eB5"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-V7-Vac">
-                                <rect key="frame" x="40" y="116" width="240" height="136"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-V7-Vac">
+                                <rect key="frame" x="23" y="184" width="280" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="X52-J7-enM"/>
+                                    <constraint firstAttribute="height" constant="128" id="gWE-Ra-xVu"/>
+                                </constraints>
                                 <string key="text">Dubai Cares Offices, Dubai Healthcare 
 City, District 7, Building 16, level 4, 
 Dubai, UAE.
@@ -1138,15 +1150,19 @@ Fax: +971 4 452 2999</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tR-GI-DYt">
-                                <rect key="frame" x="81" y="299" width="65" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tR-GI-DYt">
+                                <rect key="frame" x="20" y="320" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="KCD-lh-cQD"/>
+                                    <constraint firstAttribute="height" constant="55" id="QHo-gF-8MN"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="facebook_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="32"/>
+                                        <integer key="value" value="27"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -1154,9 +1170,13 @@ Fax: +971 4 452 2999</string>
                                     <action selector="facebookOpen:" destination="m60-wI-gjJ" eventType="touchUpInside" id="tfh-61-ZPW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbv-y8-udS">
-                                <rect key="frame" x="81" y="386" width="65" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbv-y8-udS">
+                                <rect key="frame" x="90" y="320" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="JZC-p0-okO"/>
+                                    <constraint firstAttribute="width" constant="55" id="ynv-L0-734"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="youtube_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1164,9 +1184,13 @@ Fax: +971 4 452 2999</string>
                                     <action selector="youtubeOpen:" destination="m60-wI-gjJ" eventType="touchUpInside" id="5eS-8c-aUg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="297-fb-qQu">
-                                <rect key="frame" x="175" y="386" width="65" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="297-fb-qQu">
+                                <rect key="frame" x="245" y="320" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Ad8-Xz-xTU"/>
+                                    <constraint firstAttribute="width" constant="55" id="ex3-ou-WRn"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="instagram_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1174,15 +1198,19 @@ Fax: +971 4 452 2999</string>
                                     <action selector="instagramOpen:" destination="m60-wI-gjJ" eventType="touchUpInside" id="aQm-nt-ifF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ob0-R2-SEM">
-                                <rect key="frame" x="175" y="299" width="65" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ob0-R2-SEM">
+                                <rect key="frame" x="169" y="320" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="76F-iU-6gH"/>
+                                    <constraint firstAttribute="height" constant="55" id="kst-Ob-XlJ"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="twitter_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="32"/>
+                                        <integer key="value" value="27"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -1190,8 +1218,20 @@ Fax: +971 4 452 2999</string>
                                     <action selector="twitterOpen:" destination="m60-wI-gjJ" eventType="touchUpInside" id="XNL-1N-gUg"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="back6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jCP-cq-WqB">
+                                <rect key="frame" x="0.0" y="-26" width="320" height="126"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="L5M-ZT-mY2"/>
+                                    <constraint firstAttribute="width" constant="320" id="xTR-G2-wdu"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="him-Wj-SgS" firstAttribute="top" secondItem="4r0-9i-hhZ" secondAttribute="bottom" constant="20" id="6ne-GG-aAU"/>
+                            <constraint firstItem="jCP-cq-WqB" firstAttribute="top" secondItem="SDR-SN-3Qs" secondAttribute="top" constant="-26" id="FtL-vS-jf5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgb-RA-WZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1210,20 +1250,31 @@ Fax: +971 4 452 2999</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cHd-lq-xAh">
-                                <rect key="frame" x="0.0" y="-93" width="320" height="240"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cHd-lq-xAh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dQ7-It-RIs"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34S-Xl-fFr">
-                                <rect key="frame" x="92" y="139" width="137" height="45"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34S-Xl-fFr">
+                                <rect key="frame" x="26" y="103" width="137" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="ZBt-uk-Psh"/>
+                                    <constraint firstAttribute="height" constant="45" id="wl5-Yr-bPn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tut-0p-1tg">
-                                <rect key="frame" x="130" y="487" width="61" height="61"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tut-0p-1tg">
+                                <rect key="frame" x="130" y="500" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ght-56-Mew"/>
+                                    <constraint firstAttribute="width" constant="60" id="oaw-I1-Nw5"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1231,8 +1282,8 @@ Fax: +971 4 452 2999</string>
                                     <segue destination="vXZ-lx-hvc" kind="modal" customClass="UIStoryboardPopoverSegue" modalTransitionStyle="crossDissolve" id="8zK-5A-vee"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCQ-o4-2Hc">
-                                <rect key="frame" x="20" y="192" width="280" height="279"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCQ-o4-2Hc">
+                                <rect key="frame" x="20" y="138" width="280" height="354"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">In order to identify program opportunities, Dubai Cares assesses the needs of local communities and designs interventions that produce immediate and long-term impact in the lives of children and their communities. To ensure program sustainability, Dubai Cares builds the capacities of local NGOs, government staff and civil societies. Two themes cut across all Dubai Cares programs - gender equality and Monitoring, Evaluation and Learning. Dubai Cares commits significant resources towards Monitoring, Evaluation and Learning activities that not only ensure alignment with its vision and values, but also become a source of valuable information for local and international communities. On gender equality, Dubai Cares' approach aims to secure equal access for boys and girls to safe learning environments with adequate facilities, materials and academic support from qualified teachers and engaged communities.
@@ -1253,6 +1304,19 @@ School systems in many countries are chronically underfunded and understaffed. A
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LCQ-o4-2Hc" firstAttribute="top" secondItem="cHd-lq-xAh" secondAttribute="bottom" constant="38" id="6xp-VU-M5d"/>
+                            <constraint firstItem="LCQ-o4-2Hc" firstAttribute="leading" secondItem="dYb-0y-Dfh" secondAttribute="leading" constant="20" symbolic="YES" id="7K9-xi-wCt"/>
+                            <constraint firstItem="34S-Xl-fFr" firstAttribute="top" secondItem="cHd-lq-xAh" secondAttribute="bottom" constant="3" id="8Cn-QO-fhV"/>
+                            <constraint firstItem="Tut-0p-1tg" firstAttribute="top" secondItem="LCQ-o4-2Hc" secondAttribute="bottom" constant="8" symbolic="YES" id="Bs8-ke-KoS"/>
+                            <constraint firstItem="cHd-lq-xAh" firstAttribute="leading" secondItem="dYb-0y-Dfh" secondAttribute="leading" id="IIY-Aq-LeD"/>
+                            <constraint firstItem="FyO-gg-QoQ" firstAttribute="top" secondItem="Tut-0p-1tg" secondAttribute="bottom" constant="8" id="VWB-Fa-LoH"/>
+                            <constraint firstItem="Tut-0p-1tg" firstAttribute="centerX" secondItem="LCQ-o4-2Hc" secondAttribute="centerX" id="Xcy-og-BJt"/>
+                            <constraint firstItem="cHd-lq-xAh" firstAttribute="top" secondItem="dYb-0y-Dfh" secondAttribute="top" id="gFn-xw-ENO"/>
+                            <constraint firstItem="34S-Xl-fFr" firstAttribute="leading" secondItem="dYb-0y-Dfh" secondAttribute="leading" constant="26" id="ley-Fp-eYi"/>
+                            <constraint firstItem="cHd-lq-xAh" firstAttribute="centerX" secondItem="LCQ-o4-2Hc" secondAttribute="centerX" id="uSe-dr-4so"/>
+                            <constraint firstAttribute="trailing" secondItem="LCQ-o4-2Hc" secondAttribute="trailing" constant="20" symbolic="YES" id="wih-Lf-CU2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oQ6-ZI-PlF"/>
                 </viewController>
@@ -1272,20 +1336,31 @@ School systems in many countries are chronically underfunded and understaffed. A
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="741-Ya-HUK">
-                                <rect key="frame" x="0.0" y="-6" width="320" height="138"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="741-Ya-HUK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jAI-4G-F9w"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where We Work" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-Lm-gWH">
-                                <rect key="frame" x="67" y="135" width="186" height="60"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where We Work" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-Lm-gWH">
+                                <rect key="frame" x="26" y="96" width="186" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6rM-Lq-ocz"/>
+                                    <constraint firstAttribute="width" constant="186" id="dk9-xe-da8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEq-a7-w3s">
-                                <rect key="frame" x="130" y="487" width="61" height="61"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEq-a7-w3s">
+                                <rect key="frame" x="130" y="500" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="4CJ-9s-kJB"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ghf-ga-6hv"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1293,13 +1368,26 @@ School systems in many countries are chronically underfunded and understaffed. A
                                     <segue destination="vXZ-lx-hvc" kind="modal" identifier="" modalTransitionStyle="crossDissolve" id="Z7L-zq-Uy2"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tU-4y-Qde">
-                                <rect key="frame" x="20" y="192" width="280" height="279"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tU-4y-Qde">
+                                <rect key="frame" x="20" y="145" width="280" height="346"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UVk-Ym-fgc" firstAttribute="top" secondItem="eEq-a7-w3s" secondAttribute="bottom" constant="8" id="3bf-OC-AAy"/>
+                            <constraint firstItem="741-Ya-HUK" firstAttribute="top" secondItem="Lv2-jF-v4h" secondAttribute="top" id="9f5-sP-pb9"/>
+                            <constraint firstItem="ANl-Lm-gWH" firstAttribute="leading" secondItem="Lv2-jF-v4h" secondAttribute="leading" constant="26" id="Cyq-vW-Vav"/>
+                            <constraint firstItem="ANl-Lm-gWH" firstAttribute="top" secondItem="ae5-tU-Xkm" secondAttribute="bottom" constant="76" id="F8R-vZ-Ct1"/>
+                            <constraint firstItem="5tU-4y-Qde" firstAttribute="top" secondItem="741-Ya-HUK" secondAttribute="bottom" constant="45" id="JFd-z2-kcO"/>
+                            <constraint firstAttribute="trailing" secondItem="5tU-4y-Qde" secondAttribute="trailing" constant="20" symbolic="YES" id="MZh-fK-31b"/>
+                            <constraint firstItem="5tU-4y-Qde" firstAttribute="leading" secondItem="Lv2-jF-v4h" secondAttribute="leading" constant="20" symbolic="YES" id="aTI-Zm-0Zt"/>
+                            <constraint firstItem="5tU-4y-Qde" firstAttribute="centerX" secondItem="eEq-a7-w3s" secondAttribute="centerX" id="hPR-4f-7Hu"/>
+                            <constraint firstItem="eEq-a7-w3s" firstAttribute="top" secondItem="5tU-4y-Qde" secondAttribute="bottom" constant="9" id="mAb-RW-eWo"/>
+                            <constraint firstItem="741-Ya-HUK" firstAttribute="leading" secondItem="Lv2-jF-v4h" secondAttribute="leading" id="nv4-Xb-Yz1"/>
+                            <constraint firstItem="5tU-4y-Qde" firstAttribute="centerX" secondItem="741-Ya-HUK" secondAttribute="centerX" id="qVX-GM-K1W"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3j2-Ya-Leq"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -1324,16 +1412,24 @@ School systems in many countries are chronically underfunded and understaffed. A
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjG-9g-Bc8">
-                                <rect key="frame" x="67" y="28" width="186" height="60"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our News" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjG-9g-Bc8">
+                                <rect key="frame" x="26" y="96" width="186" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="YN7-90-jR3"/>
+                                    <constraint firstAttribute="height" constant="60" id="quY-GE-f2r"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1p-Vn-163">
-                                <rect key="frame" x="130" y="487" width="61" height="61"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1p-Vn-163">
+                                <rect key="frame" x="130" y="500" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2Pt-aA-V5w"/>
+                                    <constraint firstAttribute="width" constant="60" id="AsV-J4-sft"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="back_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1341,13 +1437,33 @@ School systems in many countries are chronically underfunded and understaffed. A
                                     <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="SjT-67-hca"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2n-Xf-duL">
-                                <rect key="frame" x="20" y="96" width="280" height="374"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2n-Xf-duL">
+                                <rect key="frame" x="20" y="145" width="280" height="346"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YwS-rR-0Cp">
+                                <rect key="frame" x="0.0" y="-23" width="320" height="123"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="pQs-V1-7Pj"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bjG-9g-Bc8" firstAttribute="top" secondItem="KuT-ef-xPi" secondAttribute="bottom" constant="76" id="6YV-N7-h3V"/>
+                            <constraint firstItem="i2n-Xf-duL" firstAttribute="leading" secondItem="9WM-jC-enq" secondAttribute="leading" constant="20" symbolic="YES" id="A0s-NR-2uD"/>
+                            <constraint firstItem="sGd-Pk-JXr" firstAttribute="top" secondItem="m1p-Vn-163" secondAttribute="bottom" constant="8" id="DxB-fQ-dVW"/>
+                            <constraint firstItem="YwS-rR-0Cp" firstAttribute="centerX" secondItem="i2n-Xf-duL" secondAttribute="centerX" id="G6i-S5-ixl"/>
+                            <constraint firstItem="YwS-rR-0Cp" firstAttribute="top" secondItem="9WM-jC-enq" secondAttribute="top" constant="-23" id="NwL-cC-j1H"/>
+                            <constraint firstItem="i2n-Xf-duL" firstAttribute="top" secondItem="YwS-rR-0Cp" secondAttribute="bottom" constant="45" id="ar5-Ga-IfQ"/>
+                            <constraint firstItem="m1p-Vn-163" firstAttribute="top" secondItem="i2n-Xf-duL" secondAttribute="bottom" constant="9" id="b3d-6S-Uq0"/>
+                            <constraint firstItem="i2n-Xf-duL" firstAttribute="centerX" secondItem="m1p-Vn-163" secondAttribute="centerX" id="grc-JW-gg4"/>
+                            <constraint firstAttribute="trailing" secondItem="i2n-Xf-duL" secondAttribute="trailing" constant="20" symbolic="YES" id="rgz-Qy-Bxu"/>
+                            <constraint firstItem="YwS-rR-0Cp" firstAttribute="leading" secondItem="9WM-jC-enq" secondAttribute="leading" id="uXT-ol-zre"/>
+                            <constraint firstItem="bjG-9g-Bc8" firstAttribute="leading" secondItem="9WM-jC-enq" secondAttribute="leading" constant="26" id="z0w-V1-qPF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NAX-AB-v2k"/>
                     <connections>
@@ -1365,8 +1481,10 @@ School systems in many countries are chronically underfunded and understaffed. A
         <image name="anniversary_green.png" width="1183" height="1183"/>
         <image name="anniversary_icon_blue.png" width="925" height="925"/>
         <image name="baby_icon_orange.png" width="1181" height="1181"/>
-        <image name="back3.jpg" width="521" height="392"/>
-        <image name="back4.jpg" width="1620" height="657"/>
+        <image name="back3.jpg" width="521" height="164"/>
+        <image name="back4.jpg" width="1620" height="508"/>
+        <image name="back5.jpg" width="1620" height="624"/>
+        <image name="back6.jpg" width="1620" height="638"/>
         <image name="back_icon.png" width="1100" height="1115"/>
         <image name="birthday_icon_blue.png" width="1181" height="1181"/>
         <image name="christmas.png" width="1181" height="1181"/>
@@ -1399,7 +1517,7 @@ School systems in many countries are chronically underfunded and understaffed. A
         <segue reference="QjP-rt-HUw"/>
         <segue reference="OPO-xd-y32"/>
         <segue reference="0uB-mf-3qS"/>
-        <segue reference="8zK-5A-vee"/>
+        <segue reference="Bum-lA-eB5"/>
         <segue reference="Vdq-VX-1Qa"/>
     </inferredMetricsTieBreakers>
 </document>
