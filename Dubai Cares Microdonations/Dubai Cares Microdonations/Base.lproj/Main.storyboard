@@ -880,7 +880,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJx-RH-8R3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911" y="-212"/>
+            <point key="canvasLocation" x="1897" y="-921"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZUJ-y7-yq4">
@@ -944,6 +944,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsZ-jk-Vtu">
@@ -956,6 +957,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
@@ -964,7 +966,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ak5-1L-tXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2336" y="-980"/>
+            <point key="canvasLocation" x="2848" y="-921"/>
         </scene>
         <!--Confirmation View Controller-->
         <scene sceneID="JcX-dJ-hky">
@@ -1009,21 +1011,21 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="srl-Bk-gyK">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srl-Bk-gyK">
                                 <rect key="frame" x="161" y="96" width="112" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngk-Ih-O64">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngk-Ih-O64">
                                 <rect key="frame" x="161" y="130" width="112" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNW-g6-2ne">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNW-g6-2ne">
                                 <rect key="frame" x="41" y="210" width="238" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1031,12 +1033,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="84Y-Al-xWY">
-                                <rect key="frame" x="36" y="329" width="248" height="68"/>
+                                <rect key="frame" x="36" y="312" width="248" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Your donation will be deducted from 
-your mobile credit. Click “OK” to 
-finalize the transaction</string>
+your mobile credit. Click “OK” and then "send" in the appeared dialog. These steps are required to finalize the transaction</string>
                                 <color key="textColor" red="0.47058826679999999" green="0.27843138579999999" blue="0.41176474089999998" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1055,7 +1056,7 @@ finalize the transaction</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iur-Dl-1Ou">
-                                <rect key="frame" x="128" y="414" width="65" height="36"/>
+                                <rect key="frame" x="128" y="420" width="65" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -1081,11 +1082,12 @@ finalize the transaction</string>
                         <outlet property="message" destination="mNW-g6-2ne" id="AVX-MD-uXM"/>
                         <outlet property="messageLabel" destination="hl5-ly-jRj" id="whY-dF-mqg"/>
                         <outlet property="provider" destination="ngk-Ih-O64" id="HTS-c7-a4Q"/>
+                        <segue destination="aQ3-K8-vHL" kind="modal" identifier="toThankYou" modalTransitionStyle="crossDissolve" id="7Ix-7e-ORK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzM-tu-eda" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2336" y="-216"/>
+            <point key="canvasLocation" x="2347" y="-921"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="GAB-e4-IQC">
@@ -1387,10 +1389,10 @@ School systems in many countries are chronically underfunded and understaffed. A
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="dcZ-r6-Xl4"/>
-        <segue reference="0wA-o1-l73"/>
-        <segue reference="VtZ-Vz-NsU"/>
-        <segue reference="3RS-zn-MJ2"/>
-        <segue reference="2xk-tC-wnG"/>
         <segue reference="EN0-ia-rsx"/>
+        <segue reference="QjP-rt-HUw"/>
+        <segue reference="0vI-ad-BQ6"/>
+        <segue reference="2xk-tC-wnG"/>
+        <segue reference="VtZ-Vz-NsU"/>
     </inferredMetricsTieBreakers>
 </document>

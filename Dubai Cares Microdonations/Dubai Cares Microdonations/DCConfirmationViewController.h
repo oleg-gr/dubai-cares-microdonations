@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-@interface DCConfirmationViewController : UIViewController
+@interface DCConfirmationViewController : UIViewController <MFMessageComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *amount;
 @property (weak, nonatomic) IBOutlet UITextView *provider;
 @property (weak, nonatomic) IBOutlet UITextView *message;

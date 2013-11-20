@@ -20,6 +20,7 @@
 		7A00FC87183CD86D00BF4399 /* SVWebViewControllerActivitySafari.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A00FC77183CD86D00BF4399 /* SVWebViewControllerActivitySafari.m */; };
 		7A00FC88183CD86D00BF4399 /* SVWebViewControllerActivitySafari@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A00FC78183CD86D00BF4399 /* SVWebViewControllerActivitySafari@2x.png */; };
 		7A00FC89183CD86D00BF4399 /* SVWebViewControllerActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A00FC7A183CD86D00BF4399 /* SVWebViewControllerActivity.m */; };
+		7A00FC8C183CF0B500BF4399 /* DCThankYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A00FC8B183CF0B500BF4399 /* DCThankYouViewController.m */; };
 		7A5BD3D4183BDBA000794635 /* DCDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BD3D3183BDBA000794635 /* DCDataModel.m */; };
 		7A5BD3D7183BE75500794635 /* DCOccasionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BD3D6183BE75500794635 /* DCOccasionViewController.m */; };
 		7A5BD3DA183BEB1800794635 /* DCAmountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BD3D9183BEB1800794635 /* DCAmountViewController.m */; };
@@ -102,6 +103,8 @@
 		7A00FC7A183CD86D00BF4399 /* SVWebViewControllerActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVWebViewControllerActivity.m; sourceTree = "<group>"; };
 		7A00FC7B183CD86D00BF4399 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SVWebViewController.strings"; sourceTree = "<group>"; };
 		7A00FC7C183CD86D00BF4399 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SVWebViewController.strings"; sourceTree = "<group>"; };
+		7A00FC8A183CF0B500BF4399 /* DCThankYouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCThankYouViewController.h; sourceTree = "<group>"; };
+		7A00FC8B183CF0B500BF4399 /* DCThankYouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCThankYouViewController.m; sourceTree = "<group>"; };
 		7A5BD3D2183BDBA000794635 /* DCDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCDataModel.h; sourceTree = "<group>"; };
 		7A5BD3D3183BDBA000794635 /* DCDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCDataModel.m; sourceTree = "<group>"; };
 		7A5BD3D5183BE75500794635 /* DCOccasionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCOccasionViewController.h; sourceTree = "<group>"; };
@@ -295,6 +298,8 @@
 				7A5BD3D5183BE75500794635 /* DCOccasionViewController.h */,
 				7A5BD3D6183BE75500794635 /* DCOccasionViewController.m */,
 				7AC84EF7182444DD00FE6ED2 /* Main.storyboard */,
+				7A00FC8A183CF0B500BF4399 /* DCThankYouViewController.h */,
+				7A00FC8B183CF0B500BF4399 /* DCThankYouViewController.m */,
 				7A5BD3EA183C177900794635 /* DCConfirmationViewController.h */,
 				7A5BD3EB183C177900794635 /* DCConfirmationViewController.m */,
 				7A5BD3E7183C12D900794635 /* DCProviderViewController.h */,
@@ -521,6 +526,7 @@
 				7ABB214B183A68760089B3B6 /* Reachability.m in Sources */,
 				7A00FC7E183CD86D00BF4399 /* SVModalWebViewController.m in Sources */,
 				7ABB216E183A99AF0089B3B6 /* DCContactViewController.m in Sources */,
+				7A00FC8C183CF0B500BF4399 /* DCThankYouViewController.m in Sources */,
 				7A00FC87183CD86D00BF4399 /* SVWebViewControllerActivitySafari.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
