@@ -40,10 +40,14 @@
                                 <rect key="frame" x="36" y="20" width="248" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMm-a2-S7q">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMm-a2-S7q">
                                 <rect key="frame" x="1" y="505" width="62" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.47058823529411764" green="0.28627450980392155" blue="0.41568627450980389" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="im9-o2-yYV"/>
+                                    <constraint firstAttribute="height" constant="62" id="oZH-FO-SrX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="38" maxY="0.0"/>
@@ -55,10 +59,14 @@
                                     <segue destination="C7Z-2x-bue" kind="modal" modalTransitionStyle="crossDissolve" id="wGd-nX-ywD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EGs-cU-Vgz">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EGs-cU-Vgz">
                                 <rect key="frame" x="65" y="505" width="62" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="IOh-x6-JG8"/>
+                                    <constraint firstAttribute="height" constant="62" id="VNM-yZ-ogJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="38" maxY="0.0"/>
@@ -70,10 +78,14 @@
                                     <segue destination="bZC-qt-T7q" kind="modal" modalTransitionStyle="crossDissolve" id="sqs-wS-bDB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJk-an-wC1">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJk-an-wC1">
                                 <rect key="frame" x="129" y="505" width="62" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="FqL-mc-DB5"/>
+                                    <constraint firstAttribute="height" constant="62" id="uPo-s9-viF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="38" maxY="0.0"/>
@@ -85,10 +97,14 @@
                                     <segue destination="LRH-mz-bFg" kind="modal" modalTransitionStyle="crossDissolve" id="4bQ-La-ZRV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiH-Zm-MBb">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiH-Zm-MBb">
                                 <rect key="frame" x="193" y="505" width="62" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="0xo-OG-2H8"/>
+                                    <constraint firstAttribute="width" constant="62" id="koH-p3-SsG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="38" maxY="0.0"/>
@@ -101,10 +117,14 @@
                                     <action selector="becomeSupporter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ECC-9q-loS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-u1-Uwx">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-u1-Uwx">
                                 <rect key="frame" x="257" y="505" width="62" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="0k5-4B-Ete"/>
+                                    <constraint firstAttribute="height" constant="62" id="wvi-Uf-XXc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="27"/>
@@ -116,43 +136,75 @@
                                     <segue destination="m60-wI-gjJ" kind="modal" modalTransitionStyle="crossDissolve" id="oHb-QK-R0x"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Become a Supporter" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="H4P-tl-iKi">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Become a Supporter" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="H4P-tl-iKi">
                                 <rect key="frame" x="199" y="539" width="50" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Vl6-xs-KGX"/>
+                                    <constraint firstAttribute="width" constant="50" id="YOt-AS-yvb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our News" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="WDS-jd-T1H">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Our News" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="WDS-jd-T1H">
                                 <rect key="frame" x="135" y="539" width="50" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0Uv-Mt-UFg"/>
+                                    <constraint firstAttribute="height" constant="29" id="EiQ-nZ-RVa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Us" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3o-qk-eEv">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Contact Us" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3o-qk-eEv">
                                 <rect key="frame" x="257" y="539" width="62" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="5uN-gq-kft"/>
+                                    <constraint firstAttribute="width" constant="62" id="qCj-ir-G86"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where We Work" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="qTU-kd-ftj">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Where We Work" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="qTU-kd-ftj">
                                 <rect key="frame" x="71" y="539" width="50" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Yws-CI-vVs"/>
+                                    <constraint firstAttribute="height" constant="29" id="znE-D0-Ebd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="YGU-KH-Srz">
+                            <label opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="About Us" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="YGU-KH-Srz">
                                 <rect key="frame" x="7" y="539" width="50" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="HXH-ha-SVX"/>
+                                    <constraint firstAttribute="height" constant="29" id="STP-a8-NNw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6O9-GS-9dH" firstAttribute="top" secondItem="EGs-cU-Vgz" secondAttribute="bottom" constant="1" id="0sz-QM-bRp"/>
+                            <constraint firstItem="6O9-GS-9dH" firstAttribute="top" secondItem="qTU-kd-ftj" secondAttribute="bottom" id="40J-Qz-58m"/>
+                            <constraint firstItem="6O9-GS-9dH" firstAttribute="top" secondItem="hiH-Zm-MBb" secondAttribute="bottom" constant="1" id="6QR-Yv-rwA"/>
+                            <constraint firstItem="6O9-GS-9dH" firstAttribute="top" secondItem="UMm-a2-S7q" secondAttribute="bottom" constant="1" id="7ob-jh-VXu"/>
+                            <constraint firstItem="6O9-GS-9dH" firstAttribute="top" secondItem="x3o-qk-eEv" secondAttribute="bottom" id="FW9-Ri-hhe"/>
+                            <constraint firstItem="6O9-GS-9dH" firstAttribute="top" secondItem="CJk-an-wC1" secondAttribute="bottom" constant="1" id="KuS-KN-UZ9"/>
+                            <constraint firstItem="6O9-GS-9dH" firstAttribute="top" secondItem="H4P-tl-iKi" secondAttribute="bottom" id="c95-M3-27W"/>
+                            <constraint firstItem="6O9-GS-9dH" firstAttribute="top" secondItem="WDS-jd-T1H" secondAttribute="bottom" id="fe4-Ky-TAi"/>
+                            <constraint firstItem="6O9-GS-9dH" firstAttribute="top" secondItem="YGU-KH-Srz" secondAttribute="bottom" id="gfj-d0-ZgT"/>
+                            <constraint firstItem="6O9-GS-9dH" firstAttribute="top" secondItem="gMY-u1-Uwx" secondAttribute="bottom" constant="1" id="ud3-OG-CII"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hFP-hx-5dO"/>
                     <connections>
@@ -1108,7 +1160,7 @@ your mobile credit. Click “OK” and then "send" in the appeared dialog. These
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Contact Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCo-lY-vAV">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCo-lY-vAV">
                                 <rect key="frame" x="27" y="144" width="186" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -1119,7 +1171,7 @@ your mobile credit. Click “OK” and then "send" in the appeared dialog. These
                                 <color key="textColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r0-9i-hhZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r0-9i-hhZ">
                                 <rect key="frame" x="130" y="487" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -1133,7 +1185,7 @@ your mobile credit. Click “OK” and then "send" in the appeared dialog. These
                                     <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="Bum-lA-eB5"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-V7-Vac">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-V7-Vac">
                                 <rect key="frame" x="23" y="184" width="280" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1150,7 +1202,7 @@ Fax: +971 4 452 2999</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tR-GI-DYt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tR-GI-DYt">
                                 <rect key="frame" x="20" y="320" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -1170,7 +1222,7 @@ Fax: +971 4 452 2999</string>
                                     <action selector="facebookOpen:" destination="m60-wI-gjJ" eventType="touchUpInside" id="tfh-61-ZPW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbv-y8-udS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbv-y8-udS">
                                 <rect key="frame" x="90" y="320" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -1184,7 +1236,7 @@ Fax: +971 4 452 2999</string>
                                     <action selector="youtubeOpen:" destination="m60-wI-gjJ" eventType="touchUpInside" id="5eS-8c-aUg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="297-fb-qQu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="297-fb-qQu">
                                 <rect key="frame" x="245" y="320" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -1198,7 +1250,7 @@ Fax: +971 4 452 2999</string>
                                     <action selector="instagramOpen:" destination="m60-wI-gjJ" eventType="touchUpInside" id="aQm-nt-ifF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ob0-R2-SEM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ob0-R2-SEM">
                                 <rect key="frame" x="169" y="320" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -1218,7 +1270,7 @@ Fax: +971 4 452 2999</string>
                                     <action selector="twitterOpen:" destination="m60-wI-gjJ" eventType="touchUpInside" id="XNL-1N-gUg"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="back6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jCP-cq-WqB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jCP-cq-WqB">
                                 <rect key="frame" x="0.0" y="-26" width="320" height="126"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <constraints>
@@ -1230,7 +1282,21 @@ Fax: +971 4 452 2999</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="him-Wj-SgS" firstAttribute="top" secondItem="4r0-9i-hhZ" secondAttribute="bottom" constant="20" id="6ne-GG-aAU"/>
+                            <constraint firstItem="2tR-GI-DYt" firstAttribute="top" secondItem="oTQ-V7-Vac" secondAttribute="bottom" constant="8" symbolic="YES" id="AiX-98-BsZ"/>
+                            <constraint firstItem="Ob0-R2-SEM" firstAttribute="top" secondItem="oTQ-V7-Vac" secondAttribute="bottom" constant="8" symbolic="YES" id="BaC-DP-FQ8"/>
+                            <constraint firstItem="oTQ-V7-Vac" firstAttribute="leading" secondItem="SDR-SN-3Qs" secondAttribute="leading" constant="23" id="BvT-da-yGK"/>
+                            <constraint firstItem="oTQ-V7-Vac" firstAttribute="top" secondItem="jCP-cq-WqB" secondAttribute="bottom" constant="84" id="Enl-FT-OS4"/>
                             <constraint firstItem="jCP-cq-WqB" firstAttribute="top" secondItem="SDR-SN-3Qs" secondAttribute="top" constant="-26" id="FtL-vS-jf5"/>
+                            <constraint firstItem="4r0-9i-hhZ" firstAttribute="centerX" secondItem="jCP-cq-WqB" secondAttribute="centerX" id="JTo-3f-07U"/>
+                            <constraint firstItem="297-fb-qQu" firstAttribute="leading" secondItem="Ob0-R2-SEM" secondAttribute="trailing" constant="21" id="LQm-5M-0UG"/>
+                            <constraint firstItem="jCP-cq-WqB" firstAttribute="leading" secondItem="SDR-SN-3Qs" secondAttribute="leading" id="Lby-ib-ghI"/>
+                            <constraint firstItem="vCo-lY-vAV" firstAttribute="top" secondItem="jCP-cq-WqB" secondAttribute="bottom" constant="44" id="XsE-2L-xjf"/>
+                            <constraint firstAttribute="trailing" secondItem="297-fb-qQu" secondAttribute="trailing" constant="20" symbolic="YES" id="bGH-WI-bPx"/>
+                            <constraint firstItem="Gbv-y8-udS" firstAttribute="leading" secondItem="2tR-GI-DYt" secondAttribute="trailing" constant="15" id="hIc-4C-Ne4"/>
+                            <constraint firstItem="297-fb-qQu" firstAttribute="top" secondItem="oTQ-V7-Vac" secondAttribute="bottom" constant="8" symbolic="YES" id="nDX-X1-zEM"/>
+                            <constraint firstItem="Gbv-y8-udS" firstAttribute="top" secondItem="oTQ-V7-Vac" secondAttribute="bottom" constant="8" symbolic="YES" id="o6T-ND-Lcf"/>
+                            <constraint firstItem="vCo-lY-vAV" firstAttribute="leading" secondItem="SDR-SN-3Qs" secondAttribute="leading" constant="27" id="oA6-FB-dUq"/>
+                            <constraint firstItem="2tR-GI-DYt" firstAttribute="leading" secondItem="SDR-SN-3Qs" secondAttribute="leading" constant="20" symbolic="YES" id="wHQ-DD-qrw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1513,11 +1579,11 @@ School systems in many countries are chronically underfunded and understaffed. A
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="EN0-ia-rsx"/>
-        <segue reference="QjP-rt-HUw"/>
-        <segue reference="OPO-xd-y32"/>
+        <segue reference="Z7L-zq-Uy2"/>
         <segue reference="0uB-mf-3qS"/>
-        <segue reference="Bum-lA-eB5"/>
-        <segue reference="Vdq-VX-1Qa"/>
+        <segue reference="gXw-Fr-n8x"/>
+        <segue reference="QjP-rt-HUw"/>
+        <segue reference="EN0-ia-rsx"/>
+        <segue reference="OPO-xd-y32"/>
     </inferredMetricsTieBreakers>
 </document>

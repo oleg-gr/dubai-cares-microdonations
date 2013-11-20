@@ -1,0 +1,13 @@
+PODS:
+  - Reachability (3.1.1)
+  - SVWebViewController (HEAD based on 1.0)
+
+DEPENDENCIES:
+  - Reachability
+  - SVWebViewController (HEAD)
+
+SPEC CHECKSUMS:
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  SVWebViewController: 48913a78f4488edd767e4e59bb62dee1c82ff433
+
+COCOAPODS: 0.28.0
