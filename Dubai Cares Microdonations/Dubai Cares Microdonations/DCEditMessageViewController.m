@@ -8,6 +8,7 @@
 
 #import "DCEditMessageViewController.h"
 #import "DCAppDelegate.h"
+#define IS_IPHONE_4 ([[UIScreen mainScreen] bounds].size.height == 480.0f)
 
 @interface DCEditMessageViewController ()
 
@@ -27,6 +28,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if (IS_IPHONE_4)
+    {
+        self.okButton.center = CGPointMake(160, 374);
+        self.backButton.center = CGPointMake(160, 430);
+        
+    }
     
     UITapGestureRecognizer *tapOutOfText = [[UITapGestureRecognizer alloc]
                                             initWithTarget:self

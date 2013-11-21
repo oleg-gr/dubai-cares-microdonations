@@ -10,5 +10,7 @@
 
 @interface DCEditMessageViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *message;
+@property (weak, nonatomic) IBOutlet UIButton *okButton;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 
 @end
