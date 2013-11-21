@@ -533,6 +533,7 @@
 /* Begin XCBuildConfiguration section */
 		7AC84F12182444DD00FE6ED2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5057F238A84D47518902488F /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
