@@ -43,15 +43,15 @@
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
         DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
-        SLComposeViewController *tweetSheet = [SLComposeViewController
+        SLComposeViewController *twitterSheet = [SLComposeViewController
                                                composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetSheet setInitialText:[NSString stringWithFormat:@"I just donated AED %@ to Dubai Cares!", [appDelegate.appData dataForKey:@"amount"]]];
-        [tweetSheet addURL:[NSURL URLWithString:@"http://www.dubaicares.ae/en/donation"]];
-        [self presentViewController:tweetSheet animated:YES completion:nil];
+        [twitterSheet setInitialText:[NSString stringWithFormat:@"I just donated AED %@ to Dubai Cares!", [appDelegate.appData dataForKey:@"amount"]]];
+        [twitterSheet addURL:[NSURL URLWithString:@"http://www.dubaicares.ae/en/donation"]];
+        [self presentViewController:twitterSheet animated:YES completion:nil];
     }
     else
     {
-        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Not logged in to Tweeter." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Not logged in to Twitter." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [warningAlert show];
     }
 }

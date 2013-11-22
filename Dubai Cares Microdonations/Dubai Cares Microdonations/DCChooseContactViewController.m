@@ -42,7 +42,6 @@
     self.phoneNumber.inputAccessoryView = numberToolbar;
     
     DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDelegate.appData setData:@"none" forKey:@"name"];
     NSString *phone = [appDelegate.appData dataForKey:@"phone"];
     if (![phone isEqualToString:@"none"])
     {
@@ -119,15 +118,19 @@
     if (property == kABPersonPhoneProperty)
     {
         ABMultiValueRef phones = ABRecordCopyValue(person, property);
-        NSString *firstName = (__bridge NSString *)ABRecordCopyValue(person, kABPersonFirstNameProperty);
         CFStringRef phoneNumber = ABMultiValueCopyValueAtIndex(phones, identifier);
-        NSMutableString *tmp = [NSMutableString stringWithFormat:@"%@", (__bridge NSString *)phoneNumber];
+        NSLog(@"%@", phoneNumber);
+        NSMutableString *tmp = [NSMutableString stringWithFormat:@"%@", (__bridge_transfer NSString *)phoneNumber];
         NSString *strippedPhoneNumber = [tmp stringByReplacingOccurrencesOfString:@" " withString:@""];
         NSCharacterSet *doNotWant = [NSCharacterSet characterSetWithCharactersInString:@"()-"];
         strippedPhoneNumber = [[strippedPhoneNumber componentsSeparatedByCharactersInSet: doNotWant] componentsJoinedByString: @""];
         [self.phoneNumber setText:strippedPhoneNumber];
         DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
-        [appDelegate.appData setData:firstName forKey:@"name"];
+        NSString *firstName = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonFirstNameProperty);
+        if (firstName)
+        {
+             [appDelegate.appData setData:firstName forKey:@"name"];
+        }
         [peoplePicker dismissViewControllerAnimated:YES completion:nil];
         return NO;
     }
@@ -145,6 +148,8 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
+    DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate.appData setData:@"none" forKey:@"name"];
     [UIView animateWithDuration:0.3f
                           delay:0.0f
                         options:UIViewAnimationOptionCurveEaseOut

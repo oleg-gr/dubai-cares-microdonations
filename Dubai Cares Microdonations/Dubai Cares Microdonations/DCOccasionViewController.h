@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DCOccasionViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollContainer;
 
 @end

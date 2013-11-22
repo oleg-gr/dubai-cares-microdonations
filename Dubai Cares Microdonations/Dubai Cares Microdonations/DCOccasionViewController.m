@@ -27,7 +27,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.scrollContainer.userInteractionEnabled = YES;
+    self.scrollContainer.exclusiveTouch = YES;
+    self.scrollContainer.canCancelContentTouches = YES;
+    self.scrollContainer.delaysContentTouches = YES;
 }
 - (IBAction)birthday:(id)sender {
     [self goNext:@"birthday"];

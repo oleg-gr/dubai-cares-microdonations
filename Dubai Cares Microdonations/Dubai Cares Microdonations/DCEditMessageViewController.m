@@ -125,8 +125,6 @@
 }
 
 - (IBAction)backToContact:(id)sender {
-    DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDelegate.appData setData:@"none" forKey:@"name"];
     [self performSegueWithIdentifier:@"backToContact" sender:self];
 }
 
@@ -152,7 +150,10 @@
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
                          [self.view setFrame:CGRectMake(0, IS_IPHONE_4 ? -102 : -50, self.view.frame.size.width, self.view.frame.size.height)];
-                         [self.okButton setCenter:CGPointMake(self.okButton.center.x, self.okButton.center.y-18)];
+                         if (IS_IPHONE_4)
+                         {
+                             [self.okButton setCenter:CGPointMake(self.okButton.center.x, self.okButton.center.y-18)];
+                         }
                      }
                      completion:nil];
 }
@@ -164,7 +165,10 @@
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
                          [self.view setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-                          [self.okButton setCenter:CGPointMake(self.okButton.center.x, self.okButton.center.y+18)];
+                         if (IS_IPHONE_4)
+                         {
+                             [self.okButton setCenter:CGPointMake(self.okButton.center.x, self.okButton.center.y+18)];
+                         }
                      }
                      completion:nil];
 }

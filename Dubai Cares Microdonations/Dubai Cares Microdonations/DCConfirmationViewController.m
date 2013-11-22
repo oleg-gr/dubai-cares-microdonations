@@ -124,10 +124,12 @@
     }
     else
     {
-        [self.message setHidden:NO];
-        [self.messageLabel setHidden:NO];
+        if ([self.message isHidden])
+        {
+            [self.message setHidden:NO];
+            [self.messageLabel setHidden:NO];
+        }
         [self.message setText:[appDelegate.appData dataForKey:@"message"]];
-        [self.messageLabel setText:@"Your message:"];
     }
 }
 
