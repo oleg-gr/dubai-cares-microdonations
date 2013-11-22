@@ -31,9 +31,9 @@
     
     if (IS_IPHONE_4)
     {
+        NSLog(@"iphone4");
         self.okButton.center = CGPointMake(160, 374);
         self.backButton.center = CGPointMake(160, 430);
-        
     }
     
     UITapGestureRecognizer *tapOutOfText = [[UITapGestureRecognizer alloc]

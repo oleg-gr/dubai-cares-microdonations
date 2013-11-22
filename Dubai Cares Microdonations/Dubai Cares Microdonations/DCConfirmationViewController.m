@@ -8,6 +8,7 @@
 
 #import "DCConfirmationViewController.h"
 #import "DCAppDelegate.h"
+#define IS_IPHONE_4 ([[UIScreen mainScreen] bounds].size.height == 480.0f)
 
 @interface DCConfirmationViewController ()
 
@@ -26,7 +27,7 @@
 - (IBAction)confirm:(id)sender {
     if(![MFMessageComposeViewController canSendText])
     {
-        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Your device doesn't support SMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Your device doesn't support SMS! This functionality is required to proceed." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [warningAlert show];
     }
     else
@@ -77,7 +78,7 @@
         else
         {
             recipents = @[providerNumber];
-            message = @"Dubai cares donation";
+            message = @"Dubai Cares donation";
         }
         MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
         messageController.messageComposeDelegate = self;
@@ -90,19 +91,41 @@
     }
 }
 
+
+- (void) viewDidLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    if (IS_IPHONE_4)
+    {
+        self.backButton.center = CGPointMake(78, 430);
+    }
+    DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
+    if ([[appDelegate.appData dataForKey:@"mode"] isEqualToString:@"donation"])
+    {
+        self.confirmationLabel.center = CGPointMake(160, 151);
+        self.donationLabel.center = CGPointMake(97, 194);
+        self.donationValue.center = CGPointMake(217, 194);
+        self.providerLabel.center = CGPointMake(97, 228);
+        self.providerValue.center = CGPointMake(217, 228);
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
     [self.amount setText:[NSString stringWithFormat:@"%@%@", @"AED ", [appDelegate.appData dataForKey:@"amount"]]];
     [self.provider setText:[appDelegate.appData dataForKey:@"provider"]];
     if ([[appDelegate.appData dataForKey:@"mode"] isEqualToString:@"donation"])
     {
-        [self.message setText:@""];
-        [self.messageLabel setText:@""];
+        [self.message setHidden:YES];
+        [self.messageLabel setHidden:YES];
     }
     else
     {
+        [self.message setHidden:NO];
+        [self.messageLabel setHidden:NO];
         [self.message setText:[appDelegate.appData dataForKey:@"message"]];
         [self.messageLabel setText:@"Your message:"];
     }

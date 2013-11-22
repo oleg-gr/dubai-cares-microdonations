@@ -8,7 +8,9 @@
 
 #import "DCChooseContactViewController.h"
 #import "DCAppDelegate.h"
+#import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
+#define IS_IPHONE_4 ([[UIScreen mainScreen] bounds].size.height == 480.0f)
 
 @interface DCChooseContactViewController ()
 
@@ -28,14 +30,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
     numberToolbar.barStyle = UIBarStyleDefault;
     numberToolbar.items = [NSArray arrayWithObjects:
+                           [[UIBarButtonItem alloc]initWithTitle:@"Clear" style:UIBarButtonItemStyleDone target:self action:@selector(clearText)],
                            [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
-                           [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneWithNumberPad)],
+                           [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(dismissKeyboard)],
                            nil];
     [numberToolbar sizeToFit];
+    self.phoneNumber.delegate = self;
     self.phoneNumber.inputAccessoryView = numberToolbar;
     
     DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -48,14 +52,14 @@
     UITapGestureRecognizer *tapOutOfText = [[UITapGestureRecognizer alloc]
                                             initWithTarget:self
                                             action:@selector(dismissKeyboard)];
-    [tapOutOfText setCancelsTouchesInView:NO];
+    [tapOutOfText setCancelsTouchesInView:YES];
     [self.view addGestureRecognizer:tapOutOfText];
 	// Do any additional setup after loading the view.
 }
 
--(void)doneWithNumberPad{
-//    NSString *numberFromTheKeyboard = numberTextField.text;
-    [self.phoneNumber resignFirstResponder];
+-(void)clearText
+{
+    [self.phoneNumber setText:@""];
 }
 
 -(void)dismissKeyboard
@@ -66,24 +70,16 @@
 - (IBAction)chooseContact:(id)sender {
     ABPeoplePickerNavigationController *picker =
     [[ABPeoplePickerNavigationController alloc] init];
+    NSArray *propertiesToShow = [NSArray arrayWithObjects:
+                                 [NSNumber numberWithInt:kABPersonPhoneProperty], nil];
+    [picker setDisplayedProperties:propertiesToShow];
     picker.peoplePickerDelegate = self;
     [self presentViewController:picker animated:YES completion:nil];
 }
 
 - (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person
 {
-    ABMultiValueRef phones = (ABMultiValueRef) ABRecordCopyValue(person, kABPersonPhoneProperty);
-    NSString *firstName = (__bridge NSString *)ABRecordCopyValue(person, kABPersonFirstNameProperty);
-    NSString *phoneNumber = (__bridge NSString *)ABMultiValueCopyValueAtIndex(phones, 0);
-    NSMutableString *tmp = [NSMutableString stringWithFormat:@"%@", phoneNumber];
-    NSString *strippedPhoneNumber = [tmp stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSCharacterSet *doNotWant = [NSCharacterSet characterSetWithCharactersInString:@"()-"];
-    strippedPhoneNumber = [[strippedPhoneNumber componentsSeparatedByCharactersInSet: doNotWant] componentsJoinedByString: @""];
-    [self.phoneNumber setText:strippedPhoneNumber];
-    DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDelegate.appData setData:firstName forKey:@"name"];
-    [peoplePicker dismissViewControllerAnimated:YES completion:nil];
-    return NO;
+    return YES;
 }
 
 - (IBAction)goNext:(id)sender {
@@ -121,7 +117,53 @@
 
 - (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier
 {
-    return NO;
+    if (property == kABPersonPhoneProperty)
+    {
+        ABMultiValueRef phones = ABRecordCopyValue(person, property);
+        NSString *firstName = (__bridge NSString *)ABRecordCopyValue(person, kABPersonFirstNameProperty);
+        CFStringRef phoneNumber = ABMultiValueCopyValueAtIndex(phones, identifier);
+        NSMutableString *tmp = [NSMutableString stringWithFormat:@"%@", (__bridge NSString *)phoneNumber];
+        NSString *strippedPhoneNumber = [tmp stringByReplacingOccurrencesOfString:@" " withString:@""];
+        NSCharacterSet *doNotWant = [NSCharacterSet characterSetWithCharactersInString:@"()-"];
+        strippedPhoneNumber = [[strippedPhoneNumber componentsSeparatedByCharactersInSet: doNotWant] componentsJoinedByString: @""];
+        [self.phoneNumber setText:strippedPhoneNumber];
+        DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
+        [appDelegate.appData setData:firstName forKey:@"name"];
+        [peoplePicker dismissViewControllerAnimated:YES completion:nil];
+        return NO;
+    }
+    else
+    {
+        UIAlertView *message = [[UIAlertView alloc] initWithTitle:@""
+                                                          message:@"Selected field is not a phone number"
+                                                         delegate:self
+                                                cancelButtonTitle:@"OK"
+                                                otherButtonTitles:nil];
+        [message show];
+        return YES;
+    }
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [UIView animateWithDuration:0.3f
+                          delay:0.0f
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         [self.view setFrame:CGRectMake(0, IS_IPHONE_4 ? -110 : -50, self.view.frame.size.width, self.view.frame.size.height)];
+                     }
+                     completion:nil];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [UIView animateWithDuration:0.3f
+                          delay:0.0f
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         [self.view setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+                     }
+                     completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
