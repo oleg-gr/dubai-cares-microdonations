@@ -1071,7 +1071,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bD-bI-RDU">
-                                <rect key="frame" x="128" y="397" width="65" height="36"/>
+                                <rect key="frame" x="128" y="310" width="65" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -1089,32 +1089,13 @@
                                     <action selector="goNext:" destination="lyM-ix-VMG" eventType="touchUpInside" id="P8d-MU-7f3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSu-el-6PV">
-                                <rect key="frame" x="128" y="308" width="65" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.47058823529999999" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Clear">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer. masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="clear:" destination="lyM-ix-VMG" eventType="touchUpInside" id="YoM-mD-xzy"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="j3e-h3-VEe" id="BSZ-g5-kmF"/>
                         <outlet property="message" destination="tnD-Zc-cMa" id="X16-Ql-vLN"/>
-                        <outlet property="okButton" destination="1bD-bI-RDU" id="Hju-RF-MeW"/>
+                        <outlet property="okButton" destination="1bD-bI-RDU" id="fOv-0S-0L4"/>
                         <segue destination="fH3-0K-n6T" kind="modal" identifier="toSelectProvider" modalTransitionStyle="crossDissolve" id="qS8-qA-JwY"/>
                         <segue destination="dsX-ho-4GH" kind="modal" identifier="backToContact" modalTransitionStyle="crossDissolve" id="OPO-xd-y32"/>
                     </connections>
@@ -1883,8 +1864,8 @@ School systems in many countries are chronically underfunded and understaffed. A
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="dcZ-r6-Xl4"/>
-        <segue reference="EN0-ia-rsx"/>
-        <segue reference="QjP-rt-HUw"/>
+        <segue reference="qS8-qA-JwY"/>
+        <segue reference="0wA-o1-l73"/>
         <segue reference="OPO-xd-y32"/>
         <segue reference="3RS-zn-MJ2"/>
         <segue reference="2xk-tC-wnG"/>

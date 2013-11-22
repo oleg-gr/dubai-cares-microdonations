@@ -29,17 +29,20 @@
 {
     [super viewDidLoad];
     
-    if (IS_IPHONE_4)
-    {
-        NSLog(@"iphone4");
-        self.okButton.center = CGPointMake(160, 374);
-        self.backButton.center = CGPointMake(160, 430);
-    }
+    UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, IS_IPHONE_4 ? 35 : 50)];
+    numberToolbar.barStyle = UIBarStyleDefault;
+    numberToolbar.items = [NSArray arrayWithObjects:
+                           [[UIBarButtonItem alloc]initWithTitle:@"Clear" style:UIBarButtonItemStyleDone target:self action:@selector(clearText)],
+                           [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
+                           [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(dismissKeyboard)],
+                           nil];
+    self.message.delegate = self;
+    self.message.inputAccessoryView = numberToolbar;
     
     UITapGestureRecognizer *tapOutOfText = [[UITapGestureRecognizer alloc]
                                             initWithTarget:self
                                             action:@selector(dismissKeyboard)];
-    [tapOutOfText setCancelsTouchesInView:NO];
+    [tapOutOfText setCancelsTouchesInView:YES];
     [self.view addGestureRecognizer:tapOutOfText];
     
     DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -111,6 +114,16 @@
     [self.message setText:myString];
 	// Do any additional setup after loading the view.
 }
+
+- (void) viewDidLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    if (IS_IPHONE_4)
+    {
+        self.backButton.center = CGPointMake(160, 430);
+    }
+}
+
 - (IBAction)backToContact:(id)sender {
     DCAppDelegate *appDelegate = (DCAppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate.appData setData:@"none" forKey:@"name"];
@@ -130,6 +143,35 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)textViewDidBeginEditing:(UITextField *)textField
+{
+    [UIView animateWithDuration:0.3f
+                          delay:0.0f
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         [self.view setFrame:CGRectMake(0, IS_IPHONE_4 ? -102 : -50, self.view.frame.size.width, self.view.frame.size.height)];
+                         [self.okButton setCenter:CGPointMake(self.okButton.center.x, self.okButton.center.y-18)];
+                     }
+                     completion:nil];
+}
+
+- (void)textViewDidEndEditing:(UITextField *)textField
+{
+    [UIView animateWithDuration:0.3f
+                          delay:0.0f
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         [self.view setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+                          [self.okButton setCenter:CGPointMake(self.okButton.center.x, self.okButton.center.y+18)];
+                     }
+                     completion:nil];
+}
+
+- (void)clearText
+{
+    [self.message setText:@""];
 }
 
 - (void)dismissKeyboard

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DCEditMessageViewController : UIViewController
+@interface DCEditMessageViewController : UIViewController <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *message;
 @property (weak, nonatomic) IBOutlet UIButton *okButton;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
